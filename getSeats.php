@@ -2,7 +2,7 @@
 
 include('connect.php');
 
-$sql = "SELECT * FROM `RIDES` WHERE `EMAIL` = '".$_GET['email']."' AND `PASSWORD` = '".$_GET['password']."'";
+$sql = "SELECT * FROM `RIDES`";
     
 $result = $conn->query($sql);
 if(!$result)

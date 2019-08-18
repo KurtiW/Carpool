@@ -16,7 +16,7 @@ else
     {
         while($row = $result->fetch_assoc()) 
         {
-            echo $row["ID"] . "|" . $row["COUNT"]. "|" . $row["OWNER"]. "|" . $row["START"]. "|" . $row["END"]. "|" . $row["DEPARTURE"] . ";";
+            echo $row["ID"] . "|" . $row["COUNT"]. "|" . $row["OWNER"]. "|" . $row["START"]. "|" . $row["END"]. "|" . $row["DEPARTURE"] . ";<br>";
         }
     }
 }

@@ -4,7 +4,7 @@ include('connect.php');
 
 if(isset($_GET['user']) && isset($_GET['password']) && isset($_GET['email']))
 {
-$sql = "INSERT INTO `USER` (`ID`, `NAME`, `EMAIL`, `PASSWORD`, `CREATEDAT`) VALUES (NULL, '".$_GET['user']."', '".$_GET['email']."', '".$_GET['password']."', 'current_timestamp().000000');";
+$sql = "INSERT INTO `USER` (`ID`, `NAME`, `EMAIL`, `PASSWORD`, `CREATEDAT`) VALUES (NULL, '".$_GET['user']."', '".$_GET['email']."', '".$_GET['password']."', '');";
     
     $result = $conn->query($sql);
 if(!$result)

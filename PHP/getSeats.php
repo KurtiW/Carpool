@@ -2,7 +2,7 @@
 
 include('connect.php');
 
-$sql = "SELECT * FROM `RIDES`";
+$sql = "SELECT `USER`.`NAME` name, `RIDES`.`OWNER` owner, `RIDES`.`ID` id, `RIDES`.`COUNT` count, `RIDES`.`START` start, `RIDES`.`END` end, `RIDES`.`DEPARTURE` departure  FROM `RIDES` INNER JOIN `USER` ON `RIDES`.`OWNER` = `USER`.`ID`";
     
 $result = $conn->query($sql);
 if(!$result)
@@ -16,7 +16,7 @@ else
     {
         while($row = $result->fetch_assoc()) 
         {
-            echo $row["ID"] . "|" . $row["COUNT"]. "|" . $row["OWNER"]. "|" . $row["START"]. "|" . $row["END"]. "|" . $row["DEPARTURE"] . ";<br>";
+            echo $row["id"] . "|" . $row["count"]. "|" . $row["owner"]. "|" . $row["name"]. "|" . $row["start"]. "|" . $row["end"]. "|" . $row["departure"] . ";<br>";
         }
     }
 }

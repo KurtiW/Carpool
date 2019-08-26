@@ -145,23 +145,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AlleFahrten.aspx" />
-    <Content Include="Auswahl.aspx" />
+    <Content Include="main.css" />
+    <Content Include="Website\AlleFahrten.aspx" />
+    <Content Include="Website\Auswahl.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Fahrer.aspx" />
+    <Content Include="Website\Fahrer.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Login.aspx" />
-    <Content Include="MeineFahrten.aspx" />
-    <Content Include="Mitfahrer.aspx" />
-    <Content Include="NeueFahrt.aspx" />
+    <Content Include="Website\Login.aspx" />
+    <Content Include="Website\MeineFahrten.aspx" />
+    <Content Include="Website\Mitfahrer.aspx" />
+    <Content Include="Website\NeueFahrt.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Register.aspx" />
+    <Content Include="Website\Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -208,69 +209,69 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlleFahrten.aspx.cs">
+    <Compile Include="Website\AlleFahrten.aspx.cs">
       <DependentUpon>AlleFahrten.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AlleFahrten.aspx.designer.cs">
+    <Compile Include="Website\AlleFahrten.aspx.designer.cs">
       <DependentUpon>AlleFahrten.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Auswahl.aspx.cs">
+    <Compile Include="Website\Auswahl.aspx.cs">
       <DependentUpon>Auswahl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Auswahl.aspx.designer.cs">
+    <Compile Include="Website\Auswahl.aspx.designer.cs">
       <DependentUpon>Auswahl.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Fahrer.aspx.cs">
+    <Compile Include="Website\Fahrer.aspx.cs">
       <DependentUpon>Fahrer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Fahrer.aspx.designer.cs">
+    <Compile Include="Website\Fahrer.aspx.designer.cs">
       <DependentUpon>Fahrer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
+    <Compile Include="Website\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
+    <Compile Include="Website\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MeineFahrten.aspx.cs">
+    <Compile Include="Website\MeineFahrten.aspx.cs">
       <DependentUpon>MeineFahrten.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MeineFahrten.aspx.designer.cs">
+    <Compile Include="Website\MeineFahrten.aspx.designer.cs">
       <DependentUpon>MeineFahrten.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Mitfahrer.aspx.cs">
+    <Compile Include="Website\Mitfahrer.aspx.cs">
       <DependentUpon>Mitfahrer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Mitfahrer.aspx.designer.cs">
+    <Compile Include="Website\Mitfahrer.aspx.designer.cs">
       <DependentUpon>Mitfahrer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="NeueFahrt.aspx.cs">
+    <Compile Include="Website\NeueFahrt.aspx.cs">
       <DependentUpon>NeueFahrt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="NeueFahrt.aspx.designer.cs">
+    <Compile Include="Website\NeueFahrt.aspx.designer.cs">
       <DependentUpon>NeueFahrt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.aspx.cs">
+    <Compile Include="Website\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Register.aspx.designer.cs">
+    <Compile Include="Website\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">

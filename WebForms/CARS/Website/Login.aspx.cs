@@ -48,7 +48,12 @@ namespace CARS
             //Test Login 
 
             string text = CarsUtility.PullWebRequest(string.Format("login.php?email={0}& password={1}", EMail, Password));
-
+            if (text == "query error")
+            {
+                ERROR_PANEL.Visible = true;
+                ERROR_TEXT.Text = "Logindaten sind falsch";
+                return;
+            }
             HttpContext.Current.Session["user_id"] = int.Parse(text.Split('|')[0]);
             HttpContext.Current.Session["user_name"] = text.Split('|')[1];
 

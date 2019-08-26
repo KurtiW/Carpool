@@ -1,0 +1,78 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#LOGIN_PANEL {
+    background-color: #808080;
+    margin: auto;
+    width: 50%;
+    height: 50vh;
+    overflow-y: auto;
+    top: 25vh;
+    position:relative;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+
+.flex 
+{
+        display: flex;
+                    padding:5px;
+
+        width:80%;
+        margin:auto;
+
+}
+
+.field 
+{
+    border:solid;
+    border-color:white;
+    padding:5px;
+    width:80%;
+    margin:auto;
+    margin-bottom: 20px;
+        overflow-y: auto;
+
+}
+.inputfield:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px red inset;
+}
+.inputfield 
+{
+    background-color: #808080;
+    color:white;
+    border:solid;
+    border-color:white;
+    width:68%;
+}
+
+.description 
+{
+    float:left;
+    width:30%;
+    color:white;
+
+}
+
+.main_button 
+{
+    background-color: #808080;
+    color:white;
+    border:solid;
+    border-color:white;
+    flex:1;
+    margin:20px;
+}
+
+h1 
+{
+    color:white;
+    text-align:center;
+}

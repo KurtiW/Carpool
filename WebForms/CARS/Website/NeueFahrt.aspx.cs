@@ -17,10 +17,10 @@ namespace CARS
         protected void FAHRTERSTELLEN_FAHERTERSTELLEN_BUTTON_Click(object sender, EventArgs e)
         {
             string Year = FAHRTERSTELLEN_UHRZEIT_ABFAHRT_CALENDER.SelectedDate.Year.ToString();
-            string Month = FAHRTERSTELLEN_UHRZEIT_ABFAHRT_CALENDER.SelectedDate.Month.ToString();
-            string Day = FAHRTERSTELLEN_UHRZEIT_ABFAHRT_CALENDER.SelectedDate.Day.ToString();
-            string Hour = FAHRTERSTELLEN_UHRZEIT_ABFAHRTSZEIT_STUNDE_INPUT.Text;
-            string Minute = FAHRTERSTELLEN_UHRZEIT_ABFAHRTSZEIT_MINUTE_INPUT.Text;
+            string Month = FAHRTERSTELLEN_UHRZEIT_ABFAHRT_CALENDER.SelectedDate.Month.ToString().PadLeft(2, '0');
+            string Day = FAHRTERSTELLEN_UHRZEIT_ABFAHRT_CALENDER.SelectedDate.Day.ToString().PadLeft(2, '0');
+            string Hour = FAHRTERSTELLEN_UHRZEIT_ABFAHRTSZEIT_STUNDE_INPUT.Text.PadLeft(2, '0');
+            string Minute = FAHRTERSTELLEN_UHRZEIT_ABFAHRTSZEIT_MINUTE_INPUT.Text.PadLeft(2, '0');
 
 
             string Start = FAHRTERSTELLEN_ABFAHRTSORT_INPUT.Text;
@@ -82,11 +82,13 @@ namespace CARS
                 ERROR_TEXT.Text = "Wählen Sie ein Ziel aus.";
                 return;
             }
-            //
+            
+            
+ 
 
 
             //offerSeat.php?user=5&count=4&start=Ettenb%C3%BCttel&end=Sassenburg&time=2019-08-09%2000:00:00
-            string text = CarsUtility.PullWebRequest(string.Format("offerSeat.php?user={0}&count={1}&start={2}&end={3}&time={4}-{5}-{6}%{7}:{8}:00", HttpContext.Current.Session["user_id"], Places, Start, End, Year, Month, Day, Hour, Minute));
+            string text = CarsUtility.PullWebRequest(string.Format("offerSeat.php?user={0}&count={1}&start={2}&end={3}&time={4}-{5}-{6} {7}:{8}:00", HttpContext.Current.Session["user_id"], Places, Start, End, Year, Month, Day, Hour, Minute));
             if (text != "Query successfull")
             {
                 ERROR_PANEL.Visible = true;

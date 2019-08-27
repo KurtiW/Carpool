@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+        <link href="../main.css"/ rel="stylesheet"/>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,8 +18,8 @@
                     </div>
                     <div>
 
-                        <asp:Button ID="AUSWAHL_FAHRER_MITFAHRER_FAHRER_BUTTON" runat="server" Text="FAHRER" OnClick="AUSWAHL_FAHRER_MITFAHRER_FAHRER_BUTTON_Click" />
-                        <asp:Button ID="AUSWAHL_FAHRER_MITFAHRER_MITFAHRER_BUTTON" runat="server" Text="MITFAHRER" OnClick="AUSWAHL_FAHRER_MITFAHRER_MITFAHRER_BUTTON_Click" />
+                        <asp:Button ID="AUSWAHL_FAHRER_MITFAHRER_FAHRER_BUTTON" CssClass="main_button" runat="server" Text="FAHRER" OnClick="AUSWAHL_FAHRER_MITFAHRER_FAHRER_BUTTON_Click" />
+                        <asp:Button ID="AUSWAHL_FAHRER_MITFAHRER_MITFAHRER_BUTTON" CssClass="main_button" runat="server" Text="MITFAHRER" OnClick="AUSWAHL_FAHRER_MITFAHRER_MITFAHRER_BUTTON_Click" />
                     </div>
                 </asp:Panel>
     </div>

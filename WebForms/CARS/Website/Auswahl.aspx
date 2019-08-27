@@ -14,7 +14,7 @@
     <asp:Panel ID="AUSWAHL_FAHRER_MITFAHRER_PANEL" runat="server" Visible="True">
 
                     <div>
-                        <asp:Label ID="AUSWAHL_USERNAME_TEXT" runat="server" Text="USERNAME"></asp:Label>
+                        <asp:Label CssClass="invisible" ID="AUSWAHL_USERNAME_TEXT" runat="server" Text="USERNAME"></asp:Label>
                     </div>
                     <div>
 

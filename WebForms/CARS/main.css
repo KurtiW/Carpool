@@ -76,3 +76,23 @@ h1
     color:white;
     text-align:center;
 }
+
+#AUSWAHL_FAHRER_MITFAHRER_FAHRER_BUTTON {
+    width:50%;
+    height:100vh;
+    float:left;
+    margin:0px;
+    
+}
+
+#AUSWAHL_FAHRER_MITFAHRER_MITFAHRER_BUTTON {
+    width: 50%;
+    height: 100vh;
+    float:right;
+    margin:0px;
+}
+
+.invisible 
+{
+    display:none;
+}

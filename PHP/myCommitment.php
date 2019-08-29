@@ -56,8 +56,9 @@ if(isset($_GET['user']))
                                 }
                             }
                         }
-                        echo "$<br>";
                     }
+                                            echo "$<br>";
+
                 }
             }
         }

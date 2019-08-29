@@ -20,8 +20,11 @@ namespace CARS
 
 
 
-            foreach (string entry in entrys)
+            foreach (string entry_ in entrys)
             {
+                string entry = entry_.Replace("<br>", "");
+                if (string.IsNullOrEmpty(entry))
+                    continue;
                 string info = entry.Split('§')[0];
 
                 Panel entryPanel = new Panel();

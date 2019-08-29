@@ -4,7 +4,7 @@ include('connect.php');
 
 if(isset($_GET['user']))
 {
-    $sql = "SELECT * FROM `PLACES` WHERE `USER_ID` = '".$_GET['user']."';";
+    $sql = "SELECT * FROM `PLACES`  WHERE `USER_ID` = '".$_GET['user']."';";
 
     $result = $conn->query($sql);
     if(!$result)
@@ -19,7 +19,7 @@ if(isset($_GET['user']))
             while($row = $result->fetch_assoc()) 
             {
                 
-                $sql = "SELECT * FROM `RIDES` WHERE `ID` = '".$row["RIDES_ID"]."'";
+                $sql = "SELECT * FROM `RIDES` INNER JOIN `USER` ON `USER`.`ID` = `RIDES`.`OWNER` WHERE `RIDES`.`ID` = '".$row["RIDES_ID"]."'";
     
                 $r = $conn->query($sql);
                 if(!$r)
@@ -33,7 +33,7 @@ if(isset($_GET['user']))
                     {
                         while($row_ = $r->fetch_assoc()) 
                         {
-                            echo $row_["ID"] . "|" . $row_["COUNT"]. "|" . $row_["OWNER"]. "|" . $row_["START"]. "|" . $row_["END"]. "|" . $row_["DEPARTURE"] . ";<br>";
+                            echo $row["ID"] . "|" . $row_["COUNT"]. "|" . $row_["OWNER"]. "|" . $row_["NAME"]. "|" . $row_["START"]. "|" . $row_["END"]. "|" . $row_["DEPARTURE"] . ";<br>";
                         }
                     }
                 }

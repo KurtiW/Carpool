@@ -12,7 +12,7 @@
     <asp:Panel ID="MITFAHRER_PANEL" runat="server" Visible="True">
 
                     <asp:Button ID="MITFAHRER_ALLEFAHRTEN_BUTTON" runat="server" Text="ALLE FAHRTEN" OnClick="MITFAHRER_ALLEFAHRTEN_BUTTON_Click" />
-                    <asp:Button ID="MITFAHRER_MEINESITZPLÄTZE_BUTTON" runat="server" Text="MEINE SITZPLÄTZE" />
+                    <asp:Button ID="MITFAHRER_MEINESITZPLÄTZE_BUTTON" runat="server" Text="MEINE SITZPLÄTZE" OnClick="MITFAHRER_MEINESITZPLÄTZE_BUTTON_Click" />
                     <asp:Button ID="MITFAHRER_SUCHE_BUTTON" runat="server" Text="SUCHE" />
                 </asp:Panel>
     </div>

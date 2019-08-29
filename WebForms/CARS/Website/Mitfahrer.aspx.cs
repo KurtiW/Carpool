@@ -19,5 +19,11 @@ namespace CARS
             Response.Redirect("AlleFahrten");
 
         }
+
+        protected void MITFAHRER_MEINESITZPLÄTZE_BUTTON_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MeineMitfahrten");
+
+        }
     }
 }

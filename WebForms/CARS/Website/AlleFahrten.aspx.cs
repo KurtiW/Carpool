@@ -42,15 +42,15 @@ namespace CARS
                 entryPanel.Controls.Add(name);
 
                 Label start = new Label();
-                start.Text = entry.Split('|')[3];
+                start.Text = entry.Split('|')[4];
                 entryPanel.Controls.Add(start);
 
                 Label end = new Label();
-                end.Text = entry.Split('|')[4];
+                end.Text = entry.Split('|')[5];
                 entryPanel.Controls.Add(end);
 
                 Label departure = new Label();
-                departure.Text = entry.Split('|')[5];
+                departure.Text = entry.Split('|')[6];
                 entryPanel.Controls.Add(departure);
 
 

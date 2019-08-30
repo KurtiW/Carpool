@@ -1,0 +1,157 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+body 
+{
+    margin:0px;
+    font-family: 'Lexend Deca', sans-serif;
+    color:gray;
+}
+
+.checkbox input
+{
+        background-color:none;
+            margin-bottom:30px;
+
+}
+
+h1 
+{
+    margin-bottom:0px;
+}
+h2
+{
+    margin-top:0px;
+    font-size:smaller;
+}
+
+.left_container 
+{
+    float:left;
+    width:50%;
+    height:100vh;
+    background-color:coral;
+}
+
+.leftImage {
+    margin-top: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.right_container {
+     float:right;
+    width:50%;
+    height:100vh;
+    background-color:white;
+}
+
+.inner_container {
+    margin-top:10%;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.inner_container img
+{
+
+    width:30%;
+    margin:auto;
+}
+
+.field span 
+{
+    display:block;
+}
+
+.field input 
+{
+    width:100%;
+    display:block;
+    background-color:none;
+    border:none;
+    border-bottom:solid;
+    margin-bottom:30px;
+    margin-top:5px;
+    background:none;
+}
+
+#LOGIN_LOGIN_BUTTON 
+{
+    width:100%;
+    background-color:gray;
+    border:none;
+    padding:10px;
+    margin-bottom:30px;
+
+}
+
+#LOGIN_LOGIN_BUTTON:hover
+{
+    background-color:#999;
+
+
+}
+
+.bottom_line 
+{
+    width:60%;
+    margin:auto;
+}
+
+.bottom_line span
+{
+    text-align:right;
+    display:inline-block;
+        width:40%;
+}
+
+#LOGIN_REGISTER_BUTTON 
+{
+    background:none;
+    border:none;
+    float:right;
+    width:50%;
+}
+
+#LOGIN_REGISTER_BUTTON:hover
+{
+    display:block;
+    width:50%;
+    text-decoration:underline;
+}
+
+#REGISTER_REGISTRIEREN_BUTTON 
+{
+    width:100%;
+    background-color:gray;
+    border:none;
+    padding:10px;
+    margin-bottom:30px;
+
+}
+
+#REGISTER_REGISTRIEREN_BUTTON:hover
+{
+    background-color:#999;
+
+
+}
+
+
+#REGISTER_LOGIN_BUTTON 
+{
+    background:none;
+    border:none;
+    float:right;
+    width:50%;
+}
+
+#REGISTER_LOGIN_BUTTON:hover
+{
+    display:block;
+    width:50%;
+    text-decoration:underline;
+}

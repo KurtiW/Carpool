@@ -12,6 +12,7 @@
         <div>
             <asp:Panel ID="LOGIN_PANEL" runat="server" Visible="True">
                 <div class="left_container">
+
                     <img class="leftImage" src="../image/logo.jpg"/>
                 </div>
                 <div class="right_container">

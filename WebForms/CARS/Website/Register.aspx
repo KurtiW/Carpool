@@ -14,11 +14,11 @@
     <asp:Panel ID="REGISTER_PANEL" runat="server" >
                         <div class="left_container">
 
-                    <img class="leftImage" src="../image/logo.jpg"/>
+                    <img class="leftImage" src="../image/logo.png"/>
                 </div>
                 <div class="right_container">
                     <div class="inner_container">
-                        <img src="../image/logo.jpg"/>
+                        <img src="../image/logo.png"/>
 
                         <h1>Welcome</h1>
                         <h2>Register to continue</h2>

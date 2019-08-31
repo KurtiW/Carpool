@@ -13,11 +13,11 @@
             <asp:Panel ID="LOGIN_PANEL" runat="server" Visible="True">
                 <div class="left_container">
 
-                    <img class="leftImage" src="../image/logo.jpg"/>
+                    <img class="leftImage" src="../image/logo.png"/>
                 </div>
                 <div class="right_container">
                     <div class="inner_container">
-                        <img src="../image/logo.jpg"/>
+                        <img src="../image/logo.png"/>
 
                         <h1>Welcome Back</h1>
                         <h2>Sign in to continue</h2>

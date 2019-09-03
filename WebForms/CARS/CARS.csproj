@@ -145,6 +145,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="hauptmenu.css" />
+    <Content Include="login.css" />
+    <Content Include="logo.png" />
     <Content Include="main.css" />
     <Content Include="Website\AlleFahrten.aspx" />
     <Content Include="Website\Auswahl.aspx" />
@@ -153,6 +156,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Website\Fahrer.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Website\Hauptmenü.aspx" />
     <Content Include="Website\Login.aspx" />
     <Content Include="Website\MeineFahrten.aspx" />
     <Content Include="Website\Mitfahrer.aspx" />
@@ -236,6 +240,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Website\Hauptmenü.aspx.cs">
+      <DependentUpon>Hauptmenü.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\Hauptmenü.aspx.designer.cs">
+      <DependentUpon>Hauptmenü.aspx</DependentUpon>
     </Compile>
     <Compile Include="Website\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

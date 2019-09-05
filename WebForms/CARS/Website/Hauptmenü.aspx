@@ -4,58 +4,91 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href="../hauptmenu.css" rel="stylesheet" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="https://igs-sassenburg.de/iserv/logo/logo.jpg" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../banner.css" />
+    <link rel="stylesheet" type="text/css" href="../hauptmenu.css" />
+        <link rel="stylesheet" type="text/css" href="../button.css" />
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
 </head>
 <body>
-        <form id="form2" runat="server">
-<div>
-    <asp:Panel ID="Hauptmenü_Panel" runat="server">
-        <header>
-                    <asp:Image ID="Logo_Image" runat="server" />
-        <asp:Label ID="Username_Lable" runat="server" Text="Username"></asp:Label>
-        <h1>Hauptmenü</h1>
-        
-            <div class="leftbuttons">
-            <asp:Button ID="Chat_Button" runat="server" Text="Chat" />
 
-        <asp:Button ID="Abmelden_Button" runat="server" Text="Abmelden" />
-            </div>
-        </header>
-        <div class="main">
-        <asp:Label ID="Name_Label" runat="server" Text="Name"></asp:Label>
+
+
+    <form id="form2" runat="server">
         <div>
-        </div>
-        <div class="Fahrer">
-            <asp:Label ID="Fahrer_Label" runat="server" Text="Fahrer"></asp:Label>
-                <div>
-        <asp:Button ID="Fahrterstellen_Button" runat="server" Text="Fahrterstellen" />
-            <asp:Button ID="FahrtSuchen_Button" runat="server" Text="Fahrt suchen" />
-        </div>
-        
-        </div>
+            <asp:Panel ID="Hauptmenü_Panel" runat="server">
 
-        <div class="MitFahrer">
-                    <asp:Label ID="Mitfaher_Lable" runat="server" Text="Mitfahrer"></asp:Label>
-            <div>
-        <asp:Button ID="MeineFahrten_Button" runat="server" Text="Meine Fahrten" />
-            <asp:Button ID="MeineMitfahrten_Button" runat="server" Text="Meine Mitfahrten" />
-            </div>
-        </div>
+                <div class="header">
+
+                    <img src="../image/logo.png" />
+                                        <asp:Label ID="Username_Label" runat="server" Text="Username"></asp:Label>
+
+                    <div class="inner_header">
+                        <div class="name_container">
+                            <h1>Hauptmenü</h1>
+
+
+                        </div>
                     </div>
 
+                    <ul class="navigation">
+                        <a href="Login">
+                            <li>Abmelden</li>
+                        </a>
+                        <a>
+                            <li>Chat</li>
+                        </a>
+                    </ul>
+                </div>
 
-        <div>
+                <!---<header>
+                    <asp:Image ID="Logo_Image" runat="server" />
+                    <asp:Label ID="Username_Lable" runat="server" Text="Username"></asp:Label>
+
+                    
+
+
+                </header>--->
+
+                <div class="main">
+                    <div>
+                    </div>
+                    <div class="Fahrer">
+                        <asp:Label ID="Fahrer_Label" runat="server" Text="Fahrer"></asp:Label>
+                        <div>
+                            <button type="button" onclick="window.location.href='NeueFahrt.aspx'" class="btn btn3">Fahrt erstellen</button>
+                            <button type="button" onclick="window.location.href='MeineFahrten.aspx'" class="btn btn3">Meine Fahrten</button>
+                        </div>
+
+                    </div>
+
+                    <div class="MitFahrer">
+                        <asp:Label ID="Mitfaher_Lable" runat="server" Text="Mitfahrer"></asp:Label>
+                        <div>
+                            <button type="button" onclick="window.location.href='AlleFahrten.aspx'" class="btn btn3">Fahrt suchen</button>
+                            <button type="button" onclick="window.location.href='MeineMitfahrten.aspx'" class="btn btn3">Meine Mitfahrten</button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                </div>
+
+            </asp:Panel>
+
+
+            <footer>
+                <asp:Label ID="NameUntenRechts_Label" runat="server" Text="Name"></asp:Label>
+            </footer>
+
         </div>
-
-    </asp:Panel>
-
-
-    <footer>        <asp:Label ID="NameUntenRechts_Label" runat="server" Text="Name"></asp:Label>
-</footer>
-
-    </div>    </form>
+    </form>
 
 </body>
 

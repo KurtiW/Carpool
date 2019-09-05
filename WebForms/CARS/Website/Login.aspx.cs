@@ -60,7 +60,7 @@ namespace CARS
 
             //falls Test erfolgreich
 
-            Response.Redirect("Auswahl");
+            Response.Redirect("Hauptmenü");
         }
 
         protected void LOGIN_REGISTER_BUTTON_Click(object sender, EventArgs e)

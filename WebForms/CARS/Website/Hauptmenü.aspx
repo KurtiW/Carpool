@@ -7,7 +7,7 @@
     <link href="https://igs-sassenburg.de/iserv/logo/logo.jpg" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../banner.css" />
     <link rel="stylesheet" type="text/css" href="../hauptmenu.css" />
-        <link rel="stylesheet" type="text/css" href="../button.css" />
+    <link rel="stylesheet" type="text/css" href="../button.css" />
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -38,7 +38,7 @@
                         <a href="Login">
                             <li>Abmelden</li>
                         </a>
-                        <a>
+                        <a href="Chat">
                             <li>Chat</li>
                         </a>
                     </ul>

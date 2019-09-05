@@ -127,6 +127,8 @@ namespace CARS.Website
             foreach (Chat_Info ci in info)
             {
                 Panel chat_list_panel = new Panel();
+                chat_list_panel.CssClass = "chatoption_con";
+
                 List.Controls.Add(chat_list_panel);
 
                 Button chatoption = new Button();
@@ -135,6 +137,7 @@ namespace CARS.Website
                 {
                     ShowChat(ci);
                 };
+                chatoption.CssClass = "chatoption";
                 chat_list_panel.Controls.Add(chatoption);
 
 
@@ -155,17 +158,21 @@ namespace CARS.Website
             foreach(Chat_Info.Message m in c.history)
             {
                 Panel message = new Panel();
+                message.CssClass = "msg_panel " + ((m.user_id == HttpContext.Current.Session["user_id"].ToString()) ? "me" : "somebody");
                 History.Controls.Add(message);
 
                 Label user = new Label();
+                user.CssClass = "UserLabel";
                 user.Text = c.GetUserName(m.user_id);
                 message.Controls.Add(user);
 
                 Label time = new Label();
-                time.Text = m.time;
+                time.CssClass = "TimeLabel";
+                time.Text = m.time.Substring(10,6);
                 message.Controls.Add(time);
 
                 Label message_text = new Label();
+                message_text.CssClass = "MessageLabel";
                 message_text.Text = m.message;
                 message.Controls.Add(message_text);
             }

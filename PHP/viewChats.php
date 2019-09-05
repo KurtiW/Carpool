@@ -19,7 +19,7 @@ if(isset($_GET['id']))
             while($row = $result->fetch_assoc()) 
             {
 
-                echo $row["CHAT_ID"]. ";<br>";
+                echo $row["CHAT_ID"]."|".$row["NAME"]."|".$row["CREATEDAT"]. ";<br>";
                  
                 
                 

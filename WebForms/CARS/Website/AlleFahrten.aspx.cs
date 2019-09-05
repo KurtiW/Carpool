@@ -53,27 +53,32 @@ namespace CARS
                 departure.Text = entry.Split('|')[6];
                 entryPanel.Controls.Add(departure);
 
-
-                Button c = new Button();
-                c.Click += delegate
+                if (userid.Text != HttpContext.Current.Session["user_id"].ToString())
                 {
-                    CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], userid.Text));
-                };
+                    Button c = new Button();
+                    c.Click += delegate
+                    {
+                        CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], userid.Text));
+                    };
+                    c.Text = "Chat";
+                    entryPanel.Controls.Add(c);
 
-                c.Text = "Chat";
-                entryPanel.Controls.Add(c);
+                    Button f = new Button();
+                    f.Click += delegate
+                    {
+                        CarsUtility.PullWebRequest(string.Format("takeSeat.php?ride={1}&user={0}", HttpContext.Current.Session["user_id"], id.Text));
+
+                    };
+                    f.Text = "Buchen";
+                    entryPanel.Controls.Add(f);
+                }
+
+                
 
 
                 //Fahrt buchen
 
-                Button f = new Button();
-                f.Click += delegate
-                {
-                    CarsUtility.PullWebRequest(string.Format("takeSeat.php?ride={1}&user={0}", HttpContext.Current.Session["user_id"], id.Text));
-
-                };
-                f.Text = "Buchen";
-                entryPanel.Controls.Add(f);
+                
             }
         }
     }

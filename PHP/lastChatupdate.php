@@ -4,7 +4,8 @@ include('connect.php');
 
 if(isset($_GET['id']))
 {
-    $sql = "SELECT * FROM `MESSAGES` WHERE `CHAT_ID` = '".$_GET['id']."' ORDER BY `CREATEDAT` ASC";
+    $sql = "SELECT * FROM `CHAT` WHERE `ID` = '".$_GET['id']."'";
+    
     $result = $conn->query($sql);
     if(!$result)
     { //$execute_query instead of execute_query
@@ -18,7 +19,7 @@ if(isset($_GET['id']))
             while($row = $result->fetch_assoc()) 
             {
 
-                echo $row["ID"] . "|" . $row["SENDER"] . "|" .$row["MESSAGE"]. "|" .$row["CREATEDAT"] . ";<br>";
+                echo $row["LAST_UPDATE"];
                  
                 
                 

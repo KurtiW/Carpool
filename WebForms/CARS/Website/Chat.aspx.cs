@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Timers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,12 +13,15 @@ namespace CARS.Website
     public partial class Chat : System.Web.UI.Page
     {
         List<Chat_Info> info = new List<Chat_Info>();
+        
 
         public class Chat_Info
         {
             public string chat_id;
             public string chat_name;
             public string chat_createdat;
+            public string last_update;
+
 
             public List<Chat_User> users = new List<Chat_User>();
             public List<Message> history = new List<Message>();
@@ -42,6 +46,8 @@ namespace CARS.Website
                 chat_id = chat.Split('|')[0];
                 chat_name = chat.Split('|')[1];
                 chat_createdat = chat.Split('|')[2];
+                last_update = chat.Split('|')[3];
+
 
                 if (chat_name == "") 
                 {
@@ -109,6 +115,9 @@ namespace CARS.Website
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            CarsUtility.user = HttpContext.Current.Session["user_id"].ToString();
+
+
             string chats = CarsUtility.PullWebRequest(string.Format("viewChats.php?id={0}", HttpContext.Current.Session["user_id"]));
             chats = chats.Replace("<br>", "");
 
@@ -135,8 +144,19 @@ namespace CARS.Website
                 chatoption.Text = ci.chat_name;
                 chatoption.Click += delegate
                 {
+                    HttpContext.Current.Session["chat_id"] = ci.chat_id;
+                    CarsUtility.current = ci;
                     ShowChat(ci);
                 };
+
+                if(CarsUtility.reloadchat == ci.chat_id)
+                {
+                                    CarsUtility.reloadchat = "";
+
+                    HttpContext.Current.Session["chat_id"] = ci.chat_id;
+                    CarsUtility.current = ci;
+                    ShowChat(ci);
+                }
                 chatoption.CssClass = "chatoption";
                 chat_list_panel.Controls.Add(chatoption);
 
@@ -146,19 +166,41 @@ namespace CARS.Website
 
         public void ShowChat(Chat_Info c)
         {
-            string chat_history = CarsUtility.PullWebRequest(string.Format("viewChat.php?id={0}", c.chat_id)).Replace("<br>", "");
+
+
+            System.Timers.Timer t = new System.Timers.Timer();
+            t.Interval = 5000;
+            t.Elapsed += delegate
+            {
+
+                string last_change = CarsUtility.PullWebRequest(string.Format("lastChatupdate.php?id={0}", c.chat_id)).Replace("<br>", "");
+                if (CarsUtility.current.last_update != last_change)
+                {
+                    CarsUtility.reloadchat = CarsUtility.current.chat_id;
+                    ShowChat(CarsUtility.current);
+                }
+
+            };
+            t.Enabled = false;
+
+
+            string chat_history = CarsUtility.PullWebRequest(string.Format("viewChat.php?id={0}", CarsUtility.current.chat_id)).Replace("<br>", "");
+            System.Diagnostics.Debug.WriteLine(chat_history);
+            CarsUtility.current.history.Clear();
+            System.Diagnostics.Debug.WriteLine("history cleared");
 
             foreach(string message in chat_history.Split(';'))
             {
                 if (string.IsNullOrWhiteSpace(message))
                     continue;
-                c.history.Add(new Chat_Info.Message(message));
+                CarsUtility.current.history.Add(new Chat_Info.Message(message));
             }
-
-            foreach(Chat_Info.Message m in c.history)
+            foreach (Chat_Info.Message m in CarsUtility.current.history)
             {
+                System.Diagnostics.Debug.WriteLine("instance message : " + m.message);
+
                 Panel message = new Panel();
-                message.CssClass = "msg_panel " + ((m.user_id == HttpContext.Current.Session["user_id"].ToString()) ? "me" : "somebody");
+                message.CssClass = "msg_panel " + ((m.user_id == CarsUtility.user) ? "me" : "somebody");
                 History.Controls.Add(message);
 
                 Label user = new Label();
@@ -176,6 +218,13 @@ namespace CARS.Website
                 message_text.Text = m.message;
                 message.Controls.Add(message_text);
             }
+        }
+
+        protected void Send_Click(object sender, EventArgs e)
+        {
+            CarsUtility.PullWebRequest(string.Format("sendMessage.php?text={0}&author={1}&chat={2}", Message_IF.Text, HttpContext.Current.Session["user_id"], HttpContext.Current.Session["chat_id"]));
+            ShowChat(CarsUtility.current);
+
         }
     }
 }

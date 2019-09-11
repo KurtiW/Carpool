@@ -15,6 +15,11 @@ if(isset($_GET['chat']) && isset($_GET['author']) && isset($_GET['text']))
         else
         {
             echo "Query successfull";
+            
+            $sql = "UPDATE `CHAT` SET `LAST_UPDATE` = CURRENT_TIMESTAMP WHERE `CHAT`.`ID` = '".$_GET['chat']."';";
+
+            $result = $conn->query($sql);
+
         }
     }
 else

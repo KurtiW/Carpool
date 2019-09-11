@@ -4,8 +4,8 @@ include('connect.php');
 
 if(isset($_GET['id']))
 {
-    $sql = "SELECT * FROM `CHAT_USER` WHERE `USER_ID` = '".$_GET['id']."'";
-    
+    $sql = "SELECT * FROM `CHAT_USER`  INNER JOIN `CHAT` ON `CHAT`.`ID` = `CHAT_USER`.`CHAT_ID` WHERE `USER_ID` = '".$_GET['id']."';";
+
     $result = $conn->query($sql);
     if(!$result)
     { //$execute_query instead of execute_query
@@ -19,7 +19,7 @@ if(isset($_GET['id']))
             while($row = $result->fetch_assoc()) 
             {
 
-                echo $row["CHAT_ID"]."|".$row["NAME"]."|".$row["CREATEDAT"]. ";<br>";
+                echo $row["CHAT_ID"]."|".$row["NAME"]."|".$row["CREATEDAT"]."|".$row["LAST_UPDATE"]. ";<br>";
                  
                 
                 

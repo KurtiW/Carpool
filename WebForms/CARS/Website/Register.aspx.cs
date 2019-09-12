@@ -65,7 +65,7 @@ namespace CARS
 
 
 
-            Response.Redirect("Auswahl");
+            Response.Redirect("Hauptmenü");
         }
     }
 }

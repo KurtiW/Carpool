@@ -1,3 +1,7 @@
+:root {
+    --main-color: #3498db;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -15,4 +19,46 @@ body{
     line-height:80px;
     float:left;
     margin-left:2em;
+}
+
+#main_container{
+    height: calc(100vh - 80px - 30px);
+    width: 80%;
+    max-width:800px;
+    margin:auto;
+    display:flex;
+}
+
+.btn {
+    margin: 10px 15% 10px 15% !important;
+    height: 3em;
+    width: 70%;
+    
+    }
+
+.headertext
+{
+    text-align:center;
+    width:100%;
+    display:block;
+
+}
+
+.Fahrer 
+{
+    float:left;
+    width:50%;
+    margin-top:30%;
+}
+.MitFahrer {
+    float: right;
+    width: 50%;
+    margin-top: 30%;
+}
+
+#NameUntenRechts_Label {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
 }

@@ -24,7 +24,7 @@
                 <div class="header">
 
                     <img src="../image/logo.png" />
-                                        <asp:Label ID="Username_Label" runat="server" Text="Username"></asp:Label>
+                    <asp:Label ID="Username_Label" runat="server" Text="Username"></asp:Label>
 
                     <div class="inner_header">
                         <div class="name_container">
@@ -34,14 +34,14 @@
                         </div>
                     </div>
 
-                    <ul class="navigation">
+                    <div class="navigation">
                         <a href="Login">
-                            <li>Abmelden</li>
+                            Abmelden
                         </a>
                         <a href="Chat">
-                            <li>Chat</li>
+                            Chat
                         </a>
-                    </ul>
+                    </div>
                 </div>
 
                 <!---<header>
@@ -54,37 +54,37 @@
                 </header>--->
 
                 <div class="main">
-                    <div>
-                    </div>
-                    <div class="Fahrer">
-                        <asp:Label ID="Fahrer_Label" runat="server" Text="Fahrer"></asp:Label>
-                        <div>
-                            <button type="button" onclick="window.location.href='NeueFahrt.aspx'" class="btn btn3">Fahrt erstellen</button>
-                            <button type="button" onclick="window.location.href='MeineFahrten.aspx'" class="btn btn3">Meine Fahrten</button>
+                    <div id="main_container">
+
+                        <div class="Fahrer">
+                            <asp:Label ID="Fahrer_Label" runat="server" CssClass="headertext" Text="Fahrer"></asp:Label>
+                            <div>
+                                <button type="button" onclick="window.location.href='NeueFahrt.aspx'" class="btn btn3">Fahrt erstellen</button>
+                                <button type="button" onclick="window.location.href='MeineFahrten.aspx'" class="btn btn3">Meine Fahrten</button>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="MitFahrer">
-                        <asp:Label ID="Mitfaher_Lable" runat="server" Text="Mitfahrer"></asp:Label>
-                        <div>
-                            <button type="button" onclick="window.location.href='AlleFahrten.aspx'" class="btn btn3">Fahrt suchen</button>
-                            <button type="button" onclick="window.location.href='MeineMitfahrten.aspx'" class="btn btn3">Meine Mitfahrten</button>
+                        <div class="MitFahrer">
+                            <asp:Label ID="Mitfaher_Lable" runat="server" CssClass="headertext" Text="Mitfahrer"></asp:Label>
+                            <div>
+                                <button type="button" onclick="window.location.href='AlleFahrten.aspx'" class="btn btn3">Fahrt suchen</button>
+                                <button type="button" onclick="window.location.href='MeineMitfahrten.aspx'" class="btn btn3">Meine Mitfahrten</button>
 
 
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div>
-                </div>
+
 
             </asp:Panel>
 
 
             <footer>
-                <asp:Label ID="NameUntenRechts_Label" runat="server" Text="Name"></asp:Label>
+                <asp:Label ID="NameUntenRechts_Label" runat="server" Text="IGShuttle"></asp:Label>
             </footer>
 
         </div>

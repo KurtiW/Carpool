@@ -12,6 +12,7 @@ namespace CARS
     public static class CarsUtility
     {
         public static string user;
+
         public static CARS.Website.Chat.Chat_Info current;
         public static string reloadchat;
 

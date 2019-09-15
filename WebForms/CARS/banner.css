@@ -55,16 +55,14 @@
         display: table;
         float: left;
         padding: 0px 20px;
+        color: white;
+        vertical-align: middle;
+        position: relative;
+
+        line-height: 80px;
     }
 
- .navigation a{
-     display: table-cell;
-     vertical-align: middle;
-     height: 100%;
-     color: white;
-     position:relative;
-     line-height:80px;
- }
+ 
 
     .navigation a:hover 
     {
@@ -76,4 +74,20 @@
     float: left;
     filter: invert(1);
     margin-left: 5px;
+}
+
+
+
+#Username_Label {
+    height: 100%;
+    color: white;
+    line-height: 80px;
+    float: left;
+    margin-left: 2em;
+}
+
+#NameUntenRechts_Label {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }

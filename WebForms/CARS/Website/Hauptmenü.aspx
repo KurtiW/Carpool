@@ -68,7 +68,7 @@
                         <div class="MitFahrer">
                             <asp:Label ID="Mitfaher_Lable" runat="server" CssClass="headertext" Text="Mitfahrer"></asp:Label>
                             <div>
-                                <button type="button" onclick="window.location.href='AlleFahrten.aspx'" class="btn btn3">Fahrt suchen</button>
+                                <button type="button" onclick="window.location.href='Suche.aspx'" class="btn btn3">Fahrt suchen</button>
                                 <button type="button" onclick="window.location.href='MeineMitfahrten.aspx'" class="btn btn3">Meine Mitfahrten</button>
 
 

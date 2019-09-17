@@ -11,6 +11,10 @@ namespace CARS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            CARS.Website.SearchFilter s = HttpContext.Current.Session["search_filter"] as CARS.Website.SearchFilter;
+
+
             string text = CarsUtility.PullWebRequest(string.Format("getSeats.php"));
 
 
@@ -22,6 +26,13 @@ namespace CARS
                 string entry = entry_.Replace("<br>", "");
                 if (string.IsNullOrEmpty(entry))
                     continue;
+
+
+
+                if (!s.DoesFilterFit(entry))
+                    continue;
+
+
                 Panel entryPanel = new Panel();
                 MITFAHRER_ALLEFAHRTEN_PANEL.Controls.Add(entryPanel);
 
@@ -67,7 +78,6 @@ namespace CARS
                     f.Click += delegate
                     {
                         CarsUtility.PullWebRequest(string.Format("takeSeat.php?ride={1}&user={0}", HttpContext.Current.Session["user_id"], id.Text));
-
                     };
                     f.Text = "Buchen";
                     entryPanel.Controls.Add(f);

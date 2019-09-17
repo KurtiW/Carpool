@@ -56,12 +56,12 @@
                         <div class="Suche">
                             <div>
                             <asp:Label ID="Uhrzeit_Label" runat="server" Text="Uhrzeit"></asp:Label>  
-                            <asp:TextBox ID="Uhrzeit_TextBox" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="Uhrzeit_TextBox" runat="server" TextMode="Time" format="HH:mm"></asp:TextBox>
                                                             </div>
                                                         <div>
 
                             <asp:Label ID="Datum_Label" runat="server" Text="Datum"></asp:Label>
-                            <asp:TextBox ID="Datum_TextBox" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="Datum_TextBox" runat="server" TextMode="Date"></asp:TextBox>
  </div>
                                                         <div>
                             <asp:Label ID="Abfahrtsort_Label" runat="server" Text="Abfahrtsort"></asp:Label>  
@@ -78,8 +78,14 @@
 
 
                         <div class="Rechts">
-                                <button class="btn btn3">Suche<asp:Button ID="Suchen_Button"  runat="server" Text="Suche" style="visibility:hidden" /></button>
-                                <button class="btn btn3">Alle Fahrten anzeigen<asp:Button ID="AlleFahrtenAnzeigen_Button"  runat="server" Text="Suche" style="visibility:hidden" /></button>
+                                <button class="btn btn3">Suche
+                                    <asp:Button ID="Suchen_Button"  runat="server" Text="Suche" style="opacity:0; width:100%; height:100%; position: absolute;top: 0;left: 0;" OnClick="Suchen_Button_Click" />
+
+                                </button>
+                                <!--<button class="btn btn3">Alle Fahrten anzeigen
+                                    <asp:Button ID="AlleFahrtenAnzeigen_Button"  runat="server" Text="Suche" style="opacity:0; width:100%; height:100%; position: absolute;top: 0;left: 0;" />
+
+                                </button>-->
 
                         </div>
                     </div>

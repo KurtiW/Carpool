@@ -11,6 +11,8 @@ namespace CARS.Website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
+
             string text = CarsUtility.PullWebRequest(string.Format("mySeats.php?user={0}", HttpContext.Current.Session["user_id"]));
 
 

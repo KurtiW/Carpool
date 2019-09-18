@@ -11,6 +11,7 @@ namespace CARS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
 
             //http://carpool.bplaced.net/Carpool/myCommitment.php?user=5
             string text = CarsUtility.PullWebRequest(string.Format("myCommitment.php?user={0}", HttpContext.Current.Session["user_id"]));

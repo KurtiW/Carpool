@@ -20,7 +20,7 @@
 
                     <div class="inner_header">
                         <div class="name_container">
-                            <h1>Suche</h1>
+                            <h1>Chat</h1>
 
 
                         </div>
@@ -30,9 +30,7 @@
                         <a href="Hauptmenü">
                             Zurück
                         </a>
-                        <a href="Chat">
-                            Chat
-                        </a>
+                        
                     </div>
                 </div>
         <div class="container">

@@ -22,15 +22,15 @@
 
                     <div class="inner_header">
                         <div class="name_container">
-                            <h1>Hauptmenü</h1>
+                            <h1>Meine Fahrten</h1>
 
 
                         </div>
                     </div>
 
                     <ul class="navigation">
-                        <a href="Login">
-                            <li>Abmelden</li>
+                        <a href="Hauptmenü">
+                            <li>Zurück</li>
                         </a>
                         <a href="Chat">
                             <li>Chat</li>

@@ -11,6 +11,8 @@ namespace CARS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
+
 
             CARS.Website.SearchFilter s = HttpContext.Current.Session["search_filter"] as CARS.Website.SearchFilter;
 

@@ -115,6 +115,7 @@ namespace CARS.Website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
 
         }
 

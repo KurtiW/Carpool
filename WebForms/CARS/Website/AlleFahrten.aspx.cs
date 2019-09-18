@@ -31,64 +31,75 @@ namespace CARS
 
                 if (!s.DoesFilterFit(entry))
                     continue;
-
-
-                Panel entryPanel = new Panel();
-                MITFAHRER_ALLEFAHRTEN_PANEL.Controls.Add(entryPanel);
-
-                Label id = new Label();
+                if (entry.Split('|')[2] != HttpContext.Current.Session["user_id"].ToString())
+                {
+                    
+                    TableRow entryPanel = new TableRow();
+                 
+                /*TableCell id = new TableCell();
                 id.Text = entry.Split('|')[0];
                 entryPanel.Controls.Add(id);
 
-                Label count = new Label();
-                count.Text = entry.Split('|')[1];
-                entryPanel.Controls.Add(count);
+                */   
 
-                Label userid = new Label();
+                    /*
+
+                    TableCell userid = new TableCell();
                 userid.Text = entry.Split('|')[2];
-                entryPanel.Controls.Add(userid);
+                entryPanel.Controls.Add(userid);*/
 
-                Label name = new Label();
-                name.Text = entry.Split('|')[3];
-                entryPanel.Controls.Add(name);
+                
 
-                Label start = new Label();
+                    TableCell start = new TableCell();
                 start.Text = entry.Split('|')[4];
                 entryPanel.Controls.Add(start);
 
-                Label end = new Label();
+                    TableCell end = new TableCell();
                 end.Text = entry.Split('|')[5];
                 entryPanel.Controls.Add(end);
 
-                Label departure = new Label();
-                departure.Text = entry.Split('|')[6];
+                    TableCell departure = new TableCell();
+                departure.Text = entry.Split('|')[6].Substring(0,16);
                 entryPanel.Controls.Add(departure);
 
-                if (userid.Text != HttpContext.Current.Session["user_id"].ToString())
-                {
+                    TableCell name = new TableCell();
+                    name.Text = entry.Split('|')[3];
+                    entryPanel.Controls.Add(name);
+
+                    TableCell count = new TableCell();
+                    count.Text = entry.Split('|')[1];
+                    entryPanel.Controls.Add(count);
+
+                    TableCell controls = new TableCell();
+                    entryPanel.Controls.Add(controls);
+
+
                     Button c = new Button();
                     c.Click += delegate
                     {
-                        CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], userid.Text));
+                        CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], entry.Split('|')[2]));
                     };
                     c.Text = "Chat";
-                    entryPanel.Controls.Add(c);
+                    controls.Controls.Add(c);
 
                     Button f = new Button();
                     f.Click += delegate
                     {
-                        CarsUtility.PullWebRequest(string.Format("takeSeat.php?ride={1}&user={0}", HttpContext.Current.Session["user_id"], id.Text));
+                        CarsUtility.PullWebRequest(string.Format("takeSeat.php?ride={1}&user={0}", HttpContext.Current.Session["user_id"], entry.Split('|')[0]));
                     };
                     f.Text = "Buchen";
-                    entryPanel.Controls.Add(f);
+                    controls.Controls.Add(f);
+
+                    Table1.Rows.Add(entryPanel);
+
                 }
 
-                
+
 
 
                 //Fahrt buchen
 
-                
+
             }
         }
     }

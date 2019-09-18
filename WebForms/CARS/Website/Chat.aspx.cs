@@ -203,15 +203,17 @@ namespace CARS.Website
                 message.CssClass = "msg_panel " + ((m.user_id == CarsUtility.user) ? "me" : "somebody");
                 History.Controls.Add(message);
 
+                Label time = new Label();
+                time.CssClass = "TimeLabel";
+                time.Text = m.time.Substring(10, 6);
+                message.Controls.Add(time);
+
                 Label user = new Label();
                 user.CssClass = "UserLabel";
                 user.Text = c.GetUserName(m.user_id);
                 message.Controls.Add(user);
 
-                Label time = new Label();
-                time.CssClass = "TimeLabel";
-                time.Text = m.time.Substring(10,6);
-                message.Controls.Add(time);
+               
 
                 Label message_text = new Label();
                 message_text.CssClass = "MessageLabel";

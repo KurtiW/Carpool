@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
         <link rel="stylesheet" type="text/css" href="../chat.css" />
+        <link href="../banner.css"/ rel="stylesheet"/>
 
     <title></title>
 
@@ -12,6 +13,28 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <div class="header">
+
+                    <img src="../image/logo.png" />
+                    <asp:Label ID="Username_Label" runat="server" Text="Username"></asp:Label>
+
+                    <div class="inner_header">
+                        <div class="name_container">
+                            <h1>Suche</h1>
+
+
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="Hauptmenü">
+                            Zurück
+                        </a>
+                        <a href="Chat">
+                            Chat
+                        </a>
+                    </div>
+                </div>
         <div class="container">
 
             <asp:Panel ID="List" runat="server"></asp:Panel>

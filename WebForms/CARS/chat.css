@@ -11,20 +11,21 @@
 .container
 {
     display:flex;
-    height:100vh;
+
+    height: calc(100vh - 80px);
 }
 
-#List 
-{
-    float:left;
-    width:30%;
-    overflow-y:auto;
+#List {
+    float: left;
+    width: 30%;
+    overflow-y: auto;
     background-color: #aaa;
+    height: calc(100vh - 80px);
 }
-#History 
-{
-    width:70%;
-
+#History {
+    width: 70%;
+    height: calc(100vh - 80px - 80px);
+    overflow-y:scroll;
 }
 
 .chatoption 
@@ -106,7 +107,6 @@ border:none;
     clear:both;
     max-width:70%;
     min-width:200px;
-    width:max-content;
 }
 
 .msg_panel.me
@@ -134,7 +134,9 @@ border:none;
 
 .UserLabel 
 {
-    width:100%;
+    float:left;
+
+    width:calc(100% - 65px);
     display:block;
     text-decoration:underline;
 }
@@ -145,6 +147,18 @@ border:none;
     float:left;
     height:1em;
     font-size:small;
-    position:absolute;
+    float:left;
+    width:50px;
 
+}
+
+.MessageLabel 
+{
+    margin-left: 60px;
+    display: block;
+}
+
+.msg_panel.me .MessageLabel {
+    margin-right: 60px !important;
+    margin-left: 0px !important;
 }

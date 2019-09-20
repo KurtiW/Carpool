@@ -4,7 +4,7 @@ include('connect.php');
 
 if(isset($_GET['id']))
 {
-    $sql = "SELECT * FROM `CHAT_USER`  INNER JOIN `CHAT` ON `CHAT`.`ID` = `CHAT_USER`.`CHAT_ID` WHERE `USER_ID` = '".$_GET['id']."';";
+    $sql = "SELECT * FROM `CHAT_USER`  INNER JOIN `CHAT` ON `CHAT`.`ID` = `CHAT_USER`.`CHAT_ID` WHERE `USER_ID` = '".$_GET['id']."' ORDER BY `LAST_UPDATE` DESC;";
 
     $result = $conn->query($sql);
     if(!$result)

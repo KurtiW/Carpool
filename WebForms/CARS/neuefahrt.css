@@ -1,0 +1,74 @@
+﻿.space 
+{
+    height:50px;
+}
+
+.containerLeft {
+    width: 50%;
+    float: left;
+
+}
+
+.containerRight{
+    width: 50%;
+    float: left;
+}
+
+.containerBottom{
+    margin-top:50px;
+    width: 100%;
+
+}
+
+.containerBottom div:not(.btn), .containerRight div, .containerLeft div
+{
+    width:80%;
+    max-width:500px;
+    
+        margin: 0 auto 1em auto; 
+        clear: both;
+        overflow-y: auto;
+
+}
+
+.containerBottom span, .containerRight span, .containerLeft span
+{
+    width:calc(50% - 1em);
+    display:block;
+    float:left;
+}
+
+input:not(#FAHERTERSTELLEN_BUTTON)
+ 
+{
+    float:right;
+    width:calc(50% - 1em);
+
+}
+
+input:not(#FAHERTERSTELLEN_BUTTON), .containerBottom span, .containerRight span, .containerLeft span 
+{
+    border:solid;
+    border-color:var(--main-color);
+    border-width:thin;
+    height:80px;
+    vertical-align:middle;
+    line-height: 80px;
+    display:block;
+    box-sizing:content-box;
+    text-align:center;
+}
+
+#FAHERTERSTELLEN_BUTTON 
+{
+    opacity:0; width:100%; height:100%; position: absolute;top: 0;left: 0;
+}
+
+.btn 
+{
+    width:300px;
+    height:3em;
+    margin: 0 auto 1em auto;
+    display: block;
+
+}

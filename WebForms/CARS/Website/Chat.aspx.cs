@@ -144,22 +144,34 @@ namespace CARS.Website
 
                 Button chatoption = new Button();
                 chatoption.Text = ci.chat_name;
+                chatoption.CssClass += " chatoption";
+
                 chatoption.Click += delegate
                 {
                     HttpContext.Current.Session["chat_id"] = ci.chat_id;
                     CarsUtility.current = ci;
+
+                    foreach (Panel p in List.Controls)
+                    {
+                        Button b = p.Controls[0] as Button;
+                        b.CssClass = b.CssClass.Replace("active_chat", "");
+                    }
+
+                    chatoption.CssClass += " active_chat";
+
                     ShowChat(ci);
                 };
 
                 if(CarsUtility.reloadchat == ci.chat_id)
                 {
+                    chatoption.CssClass += " active_chat";
+
                                     CarsUtility.reloadchat = "";
 
                     HttpContext.Current.Session["chat_id"] = ci.chat_id;
                     CarsUtility.current = ci;
                     ShowChat(ci);
                 }
-                chatoption.CssClass = "chatoption";
                 chat_list_panel.Controls.Add(chatoption);
 
 

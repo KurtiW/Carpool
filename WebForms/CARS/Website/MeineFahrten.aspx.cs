@@ -29,25 +29,45 @@ namespace CARS
                 string info = entry.Split('§')[0];
 
                 Panel entryPanel = new Panel();
+                entryPanel.CssClass = "panel";
                 MEINEFAHRTEN_PANEL.Controls.Add(entryPanel);
 
                 Panel head = new Panel();
-                MEINEFAHRTEN_PANEL.Controls.Add(head);
+                head.CssClass = "head";
+                entryPanel.Controls.Add(head);
 
                 Panel bot = new Panel();
-                MEINEFAHRTEN_PANEL.Controls.Add(bot);
+                bot.CssClass = "bot";
+                entryPanel.Controls.Add(bot);
 
                 Label Start = new Label();
                 Start.Text = info.Split('|')[1];
+                Start.CssClass = "start";
                 head.Controls.Add(Start);
 
                 Label End = new Label();
                 End.Text = info.Split('|')[2];
+                End.CssClass = "end";
                 head.Controls.Add(End);
 
                 Label Time = new Label();
-                Time.Text = info.Split('|')[3];
+                Time.Text = info.Split('|')[3].Substring(0,16);
+                Time.CssClass = "time";
                 head.Controls.Add(Time);
+
+                Button b1 = new Button();
+                b1.Text = "x";
+                b1.CssClass = "button";
+                //b.Click += new EventHandler(RejectSeat);
+                b1.Click += delegate
+                {
+                    CarsUtility.PullWebRequest(string.Format("rejectRide.php?id={0}", info.Split('|')[0]));
+                    Response.Redirect("MeineFahrten");
+
+                };
+                head.Controls.Add(b1);
+
+
 
                 string[] passengers = entry.Split('§')[1].Split(';');
                 foreach (string passenger_ in passengers)
@@ -56,30 +76,35 @@ namespace CARS
                     if (!string.IsNullOrEmpty(passenger))
                     {
                         Panel p = new Panel();
+                        p.CssClass = "p";
                         bot.Controls.Add(p);
 
-                        Label id = new Label();
+                        /*Label id = new Label();
                         id.Text = passenger.Split('|')[0];
                         p.Controls.Add(id);
 
                         Label userid = new Label();
                         userid.Text = passenger.Split('|')[1];
-                        p.Controls.Add(userid);
+                        p.Controls.Add(userid);*/
 
                         Label name = new Label();
                         name.Text = passenger.Split('|')[2];
+                        name.CssClass = "name";
                         p.Controls.Add(name);
 
                         Label rating = new Label();
-                        rating.Text = passenger.Split('|')[3];
+                        rating.Text = (passenger.Split('|')[3] == "") ? "n. a." : passenger.Split('|')[3];
                         p.Controls.Add(rating);
+                        rating.CssClass = "rating";
 
                         Button b = new Button();
                         b.Text = "x";
+                        b.CssClass = "button2";
+
                         //b.Click += new EventHandler(RejectSeat);
                         b.Click += delegate 
                         {
-                            CarsUtility.PullWebRequest(string.Format("rejectSeat.php?id={0}", id.Text));
+                            CarsUtility.PullWebRequest(string.Format("rejectSeat.php?id={0}", passenger.Split('|')[0]));
                             Response.Redirect("MeineFahrten");
 
                         };

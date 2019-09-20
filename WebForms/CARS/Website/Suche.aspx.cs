@@ -20,8 +20,6 @@ namespace CARS.Website
         public bool DoesFilterFit(string s)
         {
             bool b = true;
-            System.Diagnostics.Debug.WriteLine(s);
-            System.Diagnostics.Debug.WriteLine("test start" + Start);
 
             if (!string.IsNullOrWhiteSpace(Start) && !s.Split('|')[4].Contains(Start))
             {
@@ -30,7 +28,6 @@ namespace CARS.Website
 
             }
 
-            System.Diagnostics.Debug.WriteLine("test end" + Start);
 
             if (!string.IsNullOrWhiteSpace(End) && !s.Split('|')[5].Contains(End)) 
             {
@@ -39,11 +36,9 @@ namespace CARS.Website
 
             }
 
-            System.Diagnostics.Debug.WriteLine("use Time" + useTime);
 
             if (useTime)
             {
-                System.Diagnostics.Debug.WriteLine("use Date" + useTime);
 
                 if (!useDate)
                 {
@@ -60,12 +55,10 @@ namespace CARS.Website
 
                 TimeSpan diff = (dt2 - dt1).Duration();
 
-                System.Diagnostics.Debug.WriteLine("time difference" + diff.TotalMinutes);
 
 
                 if (diff.TotalMinutes > timespan)
                 {
-                    System.Diagnostics.Debug.WriteLine("time too far off");
                     b = false;
                     return false;
                 }

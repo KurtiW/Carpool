@@ -15,6 +15,8 @@ namespace CARS
 
         public static CARS.Website.Chat.Chat_Info current;
         public static string reloadchat;
+        public static string loadChat;
+
 
         public static string main_url = "http://carpool.bplaced.net/Carpool/";
         public static string PullWebRequest(string url)

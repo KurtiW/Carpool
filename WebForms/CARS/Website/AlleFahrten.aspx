@@ -9,6 +9,7 @@
         <link href="../banner.css"/ rel="stylesheet"/>
         <link href="../search.css"/ rel="stylesheet"/>
             <link href="../button.css"/ rel="stylesheet"/>
+                <link href="../table.css"/ rel="stylesheet"/>
 
     <title></title>
     </head>
@@ -40,23 +41,27 @@
                     <asp:Panel ID="MITFAHRER_ALLEFAHRTEN_PANEL" runat="server">
                         <asp:Table ID="Table1" runat="server">
 
-                            <asp:TableRow>
-            <asp:TableCell>
+                            <asp:TableHeaderRow>
+            <asp:TableHeaderCell>
                 Start
-            </asp:TableCell>
-            <asp:TableCell>
+            </asp:TableHeaderCell>
+            <asp:TableHeaderCell>
                 Ziel
-            </asp:TableCell>
-            <asp:TableCell>
+            </asp:TableHeaderCell>
+            <asp:TableHeaderCell>
                 Zeit
-            </asp:TableCell>
-            <asp:TableCell>
+            </asp:TableHeaderCell>
+            <asp:TableHeaderCell>
                 Fahrer
-            </asp:TableCell>
-            <asp:TableCell>
+            </asp:TableHeaderCell>
+            <asp:TableHeaderCell>
                 Freie Plätze
-            </asp:TableCell>
-        </asp:TableRow>
+            </asp:TableHeaderCell>
+            <asp:TableHeaderCell>
+            </asp:TableHeaderCell>
+                                <asp:TableHeaderCell>
+            </asp:TableHeaderCell>
+        </asp:TableHeaderRow>
 
                         </asp:Table>
                     

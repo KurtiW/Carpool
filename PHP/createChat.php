@@ -27,7 +27,7 @@ if(isset($_GET['id']) && isset($_GET['user']))
         }
         else
         {
-            echo "Query successfull";
+            echo $last_id;
         }
             
         

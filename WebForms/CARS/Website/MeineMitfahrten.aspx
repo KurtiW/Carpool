@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../banner.css" />
     <link rel="stylesheet" type="text/css" href="../hauptmenu.css" />
     <link rel="stylesheet" type="text/css" href="../button.css" />
+    <link rel="stylesheet" type="text/css" href="../mitfahrten.css" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -35,7 +37,24 @@
                     </div>
                 </div>
             
-                    <asp:Panel ID="MEINEMITFAHRTEN_PANEL" runat="server" Visible="True"></asp:Panel>
+                    <asp:Panel ID="MEINEMITFAHRTEN_PANEL" runat="server" Visible="True">
+                        <!--<asp:Table ID="Table1" runat="server">
+                            <asp:TableRow runat="server">
+                                <asp:TableHeaderCell>
+                                    Fahrer
+                                </asp:TableHeaderCell>
+                                <asp:TableHeaderCell>
+                                    Start
+                                </asp:TableHeaderCell>
+                                <asp:TableHeaderCell>
+                                    Ziel
+                                </asp:TableHeaderCell>
+                                <asp:TableHeaderCell>
+                                    Zeit
+                                </asp:TableHeaderCell>
+                            </asp:TableRow>
+                        </asp:Table>-->
+                    </asp:Panel>
 
     </div>
     </form>

@@ -17,7 +17,7 @@ namespace CARS
             CARS.Website.SearchFilter s = HttpContext.Current.Session["search_filter"] as CARS.Website.SearchFilter;
 
 
-            string text = CarsUtility.PullWebRequest(string.Format("getSeats.php"));
+            string text = CarsUtility.PullWebRequest(string.Format("getSeats.php?id={0}", HttpContext.Current.Session["user_id"]));
 
 
             string[] entrys = text.Split(';');
@@ -72,25 +72,41 @@ namespace CARS
                     count.Text = entry.Split('|')[1];
                     entryPanel.Controls.Add(count);
 
-                    TableCell controls = new TableCell();
-                    entryPanel.Controls.Add(controls);
-
+                    TableCell controls1 = new TableCell();
+                    entryPanel.Controls.Add(controls1); 
+                    
+                    TableCell controls2 = new TableCell();
+                    entryPanel.Controls.Add(controls2);
 
                     Button c = new Button();
                     c.Click += delegate
                     {
-                        CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], entry.Split('|')[2]));
+                        System.Diagnostics.Debug.WriteLine("Click: " + entry.Split('|')[7]);
+
+                        if (entry.Split('|')[7] == "-1")
+                        {
+                            CarsUtility.reloadchat = CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], entry.Split('|')[2]));
+                        }
+                        else
+                        {
+                            CarsUtility.reloadchat = entry.Split('|')[7];
+
+                        }
+
+                        Response.Redirect("Chat");
+
                     };
                     c.Text = "Chat";
-                    controls.Controls.Add(c);
+                    controls1.Controls.Add(c);
 
                     Button f = new Button();
                     f.Click += delegate
                     {
                         CarsUtility.PullWebRequest(string.Format("takeSeat.php?ride={1}&user={0}", HttpContext.Current.Session["user_id"], entry.Split('|')[0]));
+                        Response.Redirect("AlleFahrten");
                     };
                     f.Text = "Buchen";
-                    controls.Controls.Add(f);
+                    controls2.Controls.Add(f);
 
                     Table1.Rows.Add(entryPanel);
 

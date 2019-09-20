@@ -15,19 +15,22 @@ namespace CARS
 
         }
 
-        protected void FAHRTERSTELLEN_FAHERTERSTELLEN_BUTTON_Click(object sender, EventArgs e)
+        protected void FAHERTERSTELLEN_BUTTON_Click(object sender, EventArgs e)
         {
-            string Year = FAHRTERSTELLEN_UHRZEIT_ABFAHRT_CALENDER.SelectedDate.Year.ToString();
-            string Month = FAHRTERSTELLEN_UHRZEIT_ABFAHRT_CALENDER.SelectedDate.Month.ToString().PadLeft(2, '0');
-            string Day = FAHRTERSTELLEN_UHRZEIT_ABFAHRT_CALENDER.SelectedDate.Day.ToString().PadLeft(2, '0');
-            string Hour = FAHRTERSTELLEN_UHRZEIT_ABFAHRTSZEIT_STUNDE_INPUT.Text.PadLeft(2, '0');
-            string Minute = FAHRTERSTELLEN_UHRZEIT_ABFAHRTSZEIT_MINUTE_INPUT.Text.PadLeft(2, '0');
 
+            DateTime date;
+            DateTime.TryParse(UHRZEIT_ABFAHRT_CALENDER.Text, out date);
 
-            string Start = FAHRTERSTELLEN_ABFAHRTSORT_INPUT.Text;
-            string End = FAHRTERSTELLEN_ZIELORT_INPUT.Text;
+            string Year = date.Year.ToString();
+            string Month = date.Month.ToString();
+            string Day = date.Day.ToString();
+            string Hour = UHRZEIT_ABFAHRTSZEIT_STUNDE_INPUT.Text.Split(':')[0];
+            string Minute = UHRZEIT_ABFAHRTSZEIT_STUNDE_INPUT.Text.Split(':')[1];
 
-            string Places = FAHRTERSTELLEN_FREIESITZPLÄTZE_INPUT.Text;
+            string Start = TextBox1.Text;
+            string End = ZIELORT_INPUT.Text;
+
+            string Places = FREIESITZPLÄTZE_INPUT.Text;
 
             if (string.IsNullOrEmpty(Year))
             {
@@ -57,12 +60,7 @@ namespace CARS
                 return;
             }
 
-            if (string.IsNullOrEmpty(Minute))
-            {
-                ERROR_PANEL.Visible = true;
-                ERROR_TEXT.Text = "Wähle eine Zeit aus.";
-                return;
-            }
+            
 
             if (string.IsNullOrEmpty(Places))
             {
@@ -97,9 +95,14 @@ namespace CARS
                 return;
             }
 
-            Response.Redirect("Fahrer");
+            Response.Redirect("MeineFahrten");
 
 
+
+        }
+
+        protected void UHRZEIT_ABFAHRTSZEIT_STUNDE_INPUT_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../banner.css" />
     <link rel="stylesheet" type="text/css" href="../hauptmenu.css" />
     <link rel="stylesheet" type="text/css" href="../button.css" />
+    <link rel="stylesheet" type="text/css" href="../fahrten.css" />
 </head>
 <body>
         <form id="form2" runat="server">

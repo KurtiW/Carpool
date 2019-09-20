@@ -1,0 +1,28 @@
+﻿.Panel 
+{
+    height:5em;
+    border-bottom:solid;
+    border-bottom-width:0.1px;
+    border-bottom-color:rgba(0,0,0,0.2);
+    margin:1em;
+}
+.Start_Label, .End_Label, .Time_Label, .UserName_Label 
+{
+    font-size:large;
+    float:left;
+    margin:1em;
+    width:15%;
+    max-width:200px;
+}
+.Time_Label 
+{
+    float:right;
+}
+
+.button 
+{
+    float:right;
+    height:80%;
+    width:10em;
+    font-size:large;
+}

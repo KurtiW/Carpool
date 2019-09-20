@@ -1,0 +1,65 @@
+﻿.panel 
+{
+    border-bottom:solid;
+    border-bottom-width:0.1px;
+    border-bottom-color:rgba(0,0,0,0.2);
+    padding:1em;
+}
+.head 
+{
+    font-size:larger;
+    padding-left:1em;
+    padding-right:1em;
+    height:3em;
+    margin-bottom:30px;
+}
+
+.start, .end, .time 
+{
+    font-size:large;
+    float:left;
+    margin:1em;
+    width:15%;
+    max-width:200px;
+}
+
+.time 
+{
+        width:20%;
+    max-width:100px;
+
+}
+
+.button , .button2
+{
+    height:100%;
+    float:right;
+    width:10em;
+}
+
+.button2 
+{
+        width:5em;
+
+}
+
+.p 
+{
+    height:2em;
+    margin-left:5em;
+    margin-right:1em;
+    clear: both;
+}
+
+.name, .rating
+{
+    float:left;
+    margin:1em;
+    width:15%;
+    max-width:200px;
+}
+
+.bot 
+{
+    overflow-y: auto;
+}

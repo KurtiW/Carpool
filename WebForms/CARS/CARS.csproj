@@ -145,26 +145,192 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="banner.css" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\CARS.dll" />
+    <Content Include="bin\CARS.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.xml" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.xml" />
+    <Content Include="bin\Microsoft.Owin.xml" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\System.Web.Providers.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="button.css" />
+    <Content Include="chat.css" />
+    <Content Include="fahrten.css" />
     <Content Include="hauptmenu.css" />
+    <Content Include="image\citymap.jpg" />
+    <Content Include="image\logo.png" />
     <Content Include="login.css" />
     <Content Include="logo.png" />
     <Content Include="main.css" />
+    <Content Include="mitfahrten.css" />
+    <Content Include="neuefahrt.css" />
+    <Content Include="obj\Release\CARS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\CARS.dll" />
+    <Content Include="obj\Release\CARS.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\banner.css" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Antlr3.Runtime.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\CARS.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\EntityFramework.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\EntityFramework.SqlServer.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Owin.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Optimization.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Providers.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\WebGrease.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\button.css" />
+    <Content Include="obj\Release\Package\PackageTmp\chat.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Site.css" />
+    <Content Include="obj\Release\Package\PackageTmp\favicon.ico" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="obj\Release\Package\PackageTmp\Global.asax" />
+    <Content Include="obj\Release\Package\PackageTmp\hauptmenu.css" />
+    <Content Include="obj\Release\Package\PackageTmp\image\logo.png" />
+    <Content Include="obj\Release\Package\PackageTmp\login.css" />
+    <Content Include="obj\Release\Package\PackageTmp\logo.png" />
+    <Content Include="obj\Release\Package\PackageTmp\main.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\modernizr-2.6.2.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\respond.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\respond.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\DetailsView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Focus.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\GridView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Menu.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\SmartNav.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\TreeView.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebForms.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebParts.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Website\AGB.aspx" />
+    <Content Include="Website\Impressum.aspx" />
+    <Content Include="Website\Suche.aspx" />
+    <Content Include="table.css" />
+    <None Include="obj\Release\Package\PackageTmp\Scripts\_references.js" />
+    <Content Include="obj\Release\Package\PackageTmp\ViewSwitcher.ascx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\AlleFahrten.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\Auswahl.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\Chat.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\Fahrer.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\Hauptmenü.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\Login.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\MeineFahrten.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\MeineMitfahrten.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\Mitfahrer.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\NeueFahrt.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Website\Register.aspx" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
+    <Content Include="search.css" />
     <Content Include="Website\AlleFahrten.aspx" />
     <Content Include="Website\Auswahl.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Website\Chat.aspx" />
     <Content Include="Website\Fahrer.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Website\Hauptmenü.aspx" />
     <Content Include="Website\Login.aspx" />
     <Content Include="Website\MeineFahrten.aspx" />
+    <Content Include="Website\MeineMitfahrten.aspx" />
     <Content Include="Website\Mitfahrer.aspx" />
     <Content Include="Website\NeueFahrt.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bin\CARS.dll.config" />
+    <Content Include="obj\Release\CARS.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\Package\PackageTmp\Bundle.config" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="obj\Release\Package\PackageTmp\packages.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Site.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\Site.Mobile.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
+    <None Include="Properties\PublishProfiles\sxs.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Website\Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -213,6 +379,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Website\AGB.aspx.cs">
+      <DependentUpon>AGB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\AGB.aspx.designer.cs">
+      <DependentUpon>AGB.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Website\AlleFahrten.aspx.cs">
       <DependentUpon>AlleFahrten.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -231,6 +410,13 @@
     <Compile Include="Website\Auswahl.aspx.designer.cs">
       <DependentUpon>Auswahl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Website\Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Website\Fahrer.aspx.cs">
       <DependentUpon>Fahrer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -248,6 +434,13 @@
     <Compile Include="Website\Hauptmenü.aspx.designer.cs">
       <DependentUpon>Hauptmenü.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Website\Impressum.aspx.cs">
+      <DependentUpon>Impressum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\Impressum.aspx.designer.cs">
+      <DependentUpon>Impressum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Website\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +454,13 @@
     </Compile>
     <Compile Include="Website\MeineFahrten.aspx.designer.cs">
       <DependentUpon>MeineFahrten.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\MeineMitfahrten.aspx.cs">
+      <DependentUpon>MeineMitfahrten.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\MeineMitfahrten.aspx.designer.cs">
+      <DependentUpon>MeineMitfahrten.aspx</DependentUpon>
     </Compile>
     <Compile Include="Website\Mitfahrer.aspx.cs">
       <DependentUpon>Mitfahrer.aspx</DependentUpon>
@@ -307,9 +507,18 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Website\Suche.aspx.cs">
+      <DependentUpon>Suche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\Suche.aspx.designer.cs">
+      <DependentUpon>Suche.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\" />
+    <Folder Include="obj\Release\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

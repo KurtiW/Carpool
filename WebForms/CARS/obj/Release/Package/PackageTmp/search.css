@@ -1,0 +1,57 @@
+﻿:root {
+    --main-color: #3498db;
+}
+
+#main_container {
+    height: calc(100vh - 80px - 30px);
+    width: 100%;
+    display: flex;
+}
+.Suche {
+    height: 100%;
+    width: 45%;
+    float: left;
+    background-color: var(--main-color);
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 25%;
+}
+
+.Rechts {
+    height: 100%;
+    width: 55%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.Suche span {
+    width: 120px;
+    display: block;
+    float: left;
+    margin-left: 4em;
+    display: inline-block;
+    margin-top: calc(2.5% - 8px);
+}
+.Suche div 
+{
+    height: 7%;
+}
+
+
+
+.Suche input {
+    height: 100%;
+    width:calc(50% - 120px);
+}
+
+.Rechts button 
+{
+    margin:1em;
+    width:300px;
+    height:4em;
+}

@@ -1,0 +1,32 @@
+﻿table 
+{
+    margin:auto;
+    margin-top:50px;
+    max-width:1000px;
+    width:100%;
+    border-collapse: collapse;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border:none;
+}
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+
+}
+tr:hover 
+{
+        background-color: #808080;
+
+}
+
+input[type=submit] 
+{
+    height: 100%;
+    width: 100%;
+    background-color:var(--main-color);
+    padding:1em;
+    max-width: 10em;
+}

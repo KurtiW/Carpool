@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Globalization;
 
 namespace CARS.Website
 {
@@ -209,8 +210,52 @@ namespace CARS.Website
                     continue;
                 CarsUtility.current.history.Add(new Chat_Info.Message(message));
             }
+
+            DateTime lastMessage = DateTime.MinValue;
+
             foreach (Chat_Info.Message m in CarsUtility.current.history)
             {
+                DateTime messageTime = DateTime.Parse(m.time);
+
+                if (messageTime.Date != lastMessage.Date)
+                {
+                    lastMessage = messageTime;
+                    Panel date = new Panel();
+                    date.CssClass = "Date";
+                    History.Controls.Add(date);
+
+                    Label d = new Label();
+                    d.CssClass = "DateLabel";
+
+                    //Weniger als 5 Tage
+                    if (new TimeSpan(DateTime.Now.Ticks - messageTime.Ticks).Days < 5)
+                    {
+                        string[] days = new string[] 
+                        {
+                            "Montag","Dienstag","Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"
+                        };
+
+
+
+                        d.Text = days[((int) messageTime.DayOfWeek) -1];
+
+                    }
+                    else 
+                    {
+
+                        string[] months = new string[] 
+                        {
+                            "Januar","Februar","März", "April", "Mai", "Juni", "Juli", "August","September","Oktober","November","Dezember"
+                        };
+
+                        string a = "0" + messageTime.Date.Day;
+                        string b = "0" + messageTime.Date.Month;
+                        d.Text = a.Substring(a.Length - 3, 2) + ". " + months[messageTime.Date.Month-1]; 
+                    }
+
+                    date.Controls.Add(d);
+                }
+
                 System.Diagnostics.Debug.WriteLine("instance message : " + m.message);
 
                 Panel message = new Panel();
@@ -238,8 +283,11 @@ namespace CARS.Website
 
         protected void Send_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrWhiteSpace(Message_IF.Text))
             CarsUtility.PullWebRequest(string.Format("sendMessage.php?text={0}&author={1}&chat={2}", Message_IF.Text, HttpContext.Current.Session["user_id"], HttpContext.Current.Session["chat_id"]));
+            Message_IF.Text = "";
             ShowChat(CarsUtility.current);
+            Message_IF.Text = "";
 
         }
     }

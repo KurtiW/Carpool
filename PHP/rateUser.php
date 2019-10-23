@@ -2,7 +2,7 @@
 
 include('connect.php');
 
-if(isset($_GET['user']) && isset($_GET['author']) && isset($_GET['rating'])&& isset($_GET['text']))
+if(isset($_GET['user']) && isset($_GET['author']) && isset($_GET['rating']) && isset($_GET['text']) && isset($_GET['text']))
 {
     $sql = "INSERT INTO `RECENSION` (`ID`, `TEXT`, `RATING`, `AUTHOR`, `RECIEVER`) VALUES (NULL, '".$_GET['text']."', '".$_GET['rating']."', '".$_GET['author']."', '".$_GET['user']."');";
 

@@ -10,14 +10,7 @@ using System.Web.UI.WebControls;
 namespace CARS
 {
     public static class CarsUtility
-    {
-        public static string user;
-
-        public static CARS.Website.Chat.Chat_Info current;
-        public static string reloadchat;
-        public static string loadChat;
-
-
+    {     
         public static string main_url = "http://carpool.bplaced.net/Carpool/";
         public static string PullWebRequest(string url)
         {
@@ -48,7 +41,9 @@ namespace CARS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            HttpContext.Current.Session["chat_id"] = "";
+            HttpContext.Current.Session["currentCI"] = "";
+            HttpContext.Current.Session["reloadchat"] = "";
         }
 
         protected void LOGIN_LOGIN_BUTTON_Click(object sender, EventArgs e)

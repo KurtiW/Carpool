@@ -18,7 +18,7 @@ namespace CARS
 
 
             string text = CarsUtility.PullWebRequest(string.Format("getSeats.php?id={0}", HttpContext.Current.Session["user_id"]));
-
+            
 
             string[] entrys = text.Split(';');
 
@@ -85,11 +85,11 @@ namespace CARS
 
                         if (entry.Split('|')[7] == "-1")
                         {
-                            CarsUtility.reloadchat = CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], entry.Split('|')[2]));
+                            HttpContext.Current.Session["reloadchat"] = CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], entry.Split('|')[2]));
                         }
                         else
                         {
-                            CarsUtility.reloadchat = entry.Split('|')[7];
+                            HttpContext.Current.Session["reloadchat"] = entry.Split('|')[7];
 
                         }
 

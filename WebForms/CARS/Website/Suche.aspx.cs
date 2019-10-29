@@ -21,7 +21,14 @@ namespace CARS.Website
         {
             bool b = true;
 
-            if (!string.IsNullOrWhiteSpace(Start) && !s.Split('|')[4].Contains(Start))
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                b = false;
+                return false;
+
+            }
+
+            if (!string.IsNullOrWhiteSpace(Start) && !s.Split('|')[4].ToLower().Contains(Start.ToLower()))
             {
                 b = false;
                 return false;
@@ -29,7 +36,7 @@ namespace CARS.Website
             }
 
 
-            if (!string.IsNullOrWhiteSpace(End) && !s.Split('|')[5].Contains(End)) 
+            if (!string.IsNullOrWhiteSpace(End) && !s.Split('|')[5].ToLower().Contains(End.ToLower())) 
             {
                 b = false;
                 return false;
@@ -49,7 +56,10 @@ namespace CARS.Website
                 }
 
                 string[] data = s.Split('|');
-                string time = data[data.Length - 1];
+                string time = data[6];
+
+                System.Diagnostics.Debug.WriteLine(s);
+
                 DateTime dt1 = DateTime.Parse(time);
                 DateTime dt2 = new DateTime(year, month, day, hour, minute, 0);
 
@@ -67,7 +77,7 @@ namespace CARS.Website
             if (useDate)
             {
                 string[] data = s.Split('|');
-                string time = data[data.Length - 1];
+                string time = data[6];
                 DateTime dt1 = DateTime.Parse(time);
 
                 if (dt1.Year != year || dt1.Month != month || dt1.Day != day) 

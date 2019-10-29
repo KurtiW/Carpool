@@ -4,7 +4,7 @@ include('connect.php');
 
 if(isset($_GET['user']))
 {
-    $sql = "SELECT * FROM `RIDES` WHERE `OWNER` = '".$_GET['user']."';";
+    $sql = "SELECT * FROM `RIDES` WHERE `OWNER` = '".$_GET['user']."' AND `DEPARTURE` > CURRENT_TIMESTAMP;";
 
     $result = $conn->query($sql);
     if(!$result)
@@ -57,8 +57,7 @@ if(isset($_GET['user']))
                             }
                         }
                     }
-                                            echo "$<br>";
-
+                    echo "$<br>";
                 }
             }
         }

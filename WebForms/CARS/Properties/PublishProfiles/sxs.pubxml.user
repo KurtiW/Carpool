@@ -22,7 +22,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/25/2019 20:29:31</publishTime>
     </File>
     <File Include="bin/CARS.dll">
-      <publishTime>10/23/2019 20:36:20</publishTime>
+      <publishTime>10/28/2019 23:15:51</publishTime>
     </File>
     <File Include="bin/CARS.dll.config">
       <publishTime>08/25/2019 20:29:37</publishTime>
@@ -106,7 +106,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/17/2019 15:39:30</publishTime>
     </File>
     <File Include="chat.css">
-      <publishTime>10/23/2019 20:03:43</publishTime>
+      <publishTime>10/24/2019 18:26:12</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>08/25/2019 20:29:30</publishTime>
@@ -147,6 +147,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="image/logo.png">
       <publishTime>09/14/2019 00:03:15</publishTime>
     </File>
+    <File Include="image/outline_star_black_18dp.png">
+      <publishTime>08/05/2019 15:58:14</publishTime>
+    </File>
+    <File Include="image/outline_star_border_black_18dp.png">
+      <publishTime>04/13/2018 07:40:56</publishTime>
+    </File>
+    <File Include="image/outline_star_white_18dp.png">
+      <publishTime>08/05/2019 15:58:14</publishTime>
+    </File>
+    <File Include="image/star-24px.svg">
+      <publishTime>10/24/2019 22:21:11</publishTime>
+    </File>
+    <File Include="image/star_border-24px.svg">
+      <publishTime>10/24/2019 22:21:06</publishTime>
+    </File>
     <File Include="login.css">
       <publishTime>10/18/2019 16:08:36</publishTime>
     </File>
@@ -164,6 +179,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="packages.config">
       <publishTime>08/25/2019 20:29:37</publishTime>
+    </File>
+    <File Include="rating.css">
+      <publishTime>10/25/2019 00:23:55</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>08/25/2019 20:29:29</publishTime>
@@ -309,11 +327,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Website/NeueFahrt.aspx">
       <publishTime>10/23/2019 19:30:19</publishTime>
     </File>
+    <File Include="Website/Rating.aspx">
+      <publishTime>10/25/2019 00:26:23</publishTime>
+    </File>
     <File Include="Website/Register.aspx">
       <publishTime>10/23/2019 20:06:27</publishTime>
     </File>
     <File Include="Website/Suche.aspx">
-      <publishTime>09/17/2019 18:00:14</publishTime>
+      <publishTime>10/25/2019 00:29:11</publishTime>
     </File>
   </ItemGroup>
 </Project>

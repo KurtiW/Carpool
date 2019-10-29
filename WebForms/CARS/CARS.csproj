@@ -200,6 +200,11 @@
     <Content Include="hauptmenu.css" />
     <Content Include="image\citymap.jpg" />
     <Content Include="image\logo.png" />
+    <Content Include="image\outline_star_black_18dp.png" />
+    <Content Include="image\outline_star_border_black_18dp.png" />
+    <Content Include="image\outline_star_white_18dp.png" />
+    <Content Include="image\star-24px.svg" />
+    <Content Include="image\star_border-24px.svg" />
     <Content Include="login.css" />
     <Content Include="logo.png" />
     <Content Include="main.css" />
@@ -278,8 +283,10 @@
     <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebForms.js" />
     <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebParts.js" />
     <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="rating.css" />
     <Content Include="Website\AGB.aspx" />
     <Content Include="Website\Impressum.aspx" />
+    <Content Include="Website\Rating.aspx" />
     <Content Include="Website\Suche.aspx" />
     <Content Include="table.css" />
     <None Include="obj\Release\Package\PackageTmp\Scripts\_references.js" />
@@ -478,6 +485,13 @@
       <DependentUpon>NeueFahrt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Website\Rating.aspx.cs">
+      <DependentUpon>Rating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\Rating.aspx.designer.cs">
+      <DependentUpon>Rating.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Website\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

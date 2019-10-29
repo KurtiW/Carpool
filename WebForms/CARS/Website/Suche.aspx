@@ -71,10 +71,10 @@
                             <asp:Label ID="Zielort_Lable" runat="server" Text="Zielort"></asp:Label>
                             <asp:TextBox ID="Zielort_TextBox" runat="server"></asp:TextBox>
                                                              </div>
-                                                        <div>
+                                       <!--                 <div>
                             <asp:Label ID="FahrerName_Lable" runat="server" Text="Fahrer"></asp:Label>
                             <asp:TextBox ID="Fahrer_TextBox" runat="server"></asp:TextBox>
-                        </div>                        </div>
+                        </div>     --->                   </div>
 
 
                         <div class="Rechts">

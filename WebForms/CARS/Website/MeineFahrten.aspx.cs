@@ -92,13 +92,25 @@ namespace CARS
                         name.CssClass = "name";
                         p.Controls.Add(name);
 
-                        Label rating = new Label();
+                        /*Label rating = new Label();
                         rating.Text = (passenger.Split('|')[4] == "") ? "n. a." : passenger.Split('|')[4];
                         p.Controls.Add(rating);
-                        rating.CssClass = "rating";
+                        rating.CssClass = "rating";*/
 
-                        
 
+                        /*Button r = new Button();
+                        r.Text = "Rate";
+                        r.CssClass = "button";
+                        //b.Click += new EventHandler(RejectSeat);
+                        r.Click += delegate
+                        {
+                            CarsUtility.command = "rejectRide";
+                            CarsUtility.ratingUserID = entry.Split('|')[0];
+                            CarsUtility.user = entry.Split('|')[1];
+                            Response.Redirect("Rating");
+
+                        };
+                        p.Controls.Add(r);*/
 
                         Button b = new Button();
                         b.Text = "x";
@@ -119,11 +131,11 @@ namespace CARS
 
                             if (passenger.Split('|')[3] == "-1")
                             {
-                                CarsUtility.reloadchat = CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], passenger.Split('|')[1]));
+                                HttpContext.Current.Session["reloadchat"] = CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], passenger.Split('|')[1]));
                             }
                             else
                             {
-                                CarsUtility.reloadchat = passenger.Split('|')[3];
+                                HttpContext.Current.Session["reloadchat"] = passenger.Split('|')[3];
 
                             }
 

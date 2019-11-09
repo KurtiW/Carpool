@@ -68,6 +68,10 @@ namespace CARS
                     name.Text = entry.Split('|')[3];
                     entryPanel.Controls.Add(name);
 
+                    TableCell rating = new TableCell();
+                    rating.Text = (float.Parse(entry.Split('|')[8].Replace(',','.')) == 0)?"n.a.":float.Parse(entry.Split('|')[8].Replace(',','.')).ToString();
+                    entryPanel.Controls.Add(rating);
+
                     TableCell count = new TableCell();
                     count.Text = entry.Split('|')[1];
                     entryPanel.Controls.Add(count);

@@ -284,11 +284,13 @@
     <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebParts.js" />
     <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebUIValidation.js" />
     <Content Include="rating.css" />
+    <Content Include="user.css" />
     <Content Include="Website\AGB.aspx" />
     <Content Include="Website\Impressum.aspx" />
     <Content Include="Website\Rating.aspx" />
     <Content Include="Website\Suche.aspx" />
     <Content Include="table.css" />
+    <Content Include="Website\User.aspx" />
     <None Include="obj\Release\Package\PackageTmp\Scripts\_references.js" />
     <Content Include="obj\Release\Package\PackageTmp\ViewSwitcher.ascx" />
     <Content Include="obj\Release\Package\PackageTmp\Website\AlleFahrten.aspx" />
@@ -527,6 +529,13 @@
     </Compile>
     <Compile Include="Website\Suche.aspx.designer.cs">
       <DependentUpon>Suche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

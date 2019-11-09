@@ -26,3 +26,11 @@
     width:10em;
     font-size:large;
 }
+
+.Big_Label 
+{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}

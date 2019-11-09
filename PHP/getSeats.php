@@ -20,7 +20,8 @@ else
             
             if(isset($_GET['id']))
             {
-                   echo CheckChat($row["owner"], $_GET['id'], $conn) . ";<br>";
+                echo CheckChat($row["owner"], $_GET['id'], $conn) . "|";
+                echo "0" . UserRating($row["owner"], $conn) . ";<br>";
             }
         
             
@@ -47,10 +48,26 @@ function CheckChat($id1, $id2, $conn)
         while($row_ = $r->fetch_assoc()) 
         {
             $a = $row_["CHAT_ID"];
-            
-        
-            
+       }
        
+   }
+
+  return $a;
+}
+
+function UserRating($id1, $conn)
+{
+        
+    $s = "SELECT AVG(`RATING`) FROM `RECENSION` WHERE `RECIEVER` = '" . $id1 . "';";
+
+    
+    $r = $conn->query($s);
+
+    if ($r->num_rows > 0) 
+    {
+        while($row_ = $r->fetch_assoc()) 
+        {
+            $a = $row_["AVG(`RATING`)"];   
        }
        
    }

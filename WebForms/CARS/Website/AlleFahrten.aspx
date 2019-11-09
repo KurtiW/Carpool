@@ -17,7 +17,6 @@
     <form id="form1" runat="server">
     <div>
         <div class="header">
-
                     <img src="../image/logo.png" />
                     <asp:Label ID="Username_Label" runat="server" Text="Username"></asp:Label>
 
@@ -53,6 +52,9 @@
             </asp:TableHeaderCell>
             <asp:TableHeaderCell>
                 Fahrer
+            </asp:TableHeaderCell>
+            <asp:TableHeaderCell>
+                Bewertung
             </asp:TableHeaderCell>
             <asp:TableHeaderCell>
                 Freie Plätze

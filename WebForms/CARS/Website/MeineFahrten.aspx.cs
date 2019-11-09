@@ -133,6 +133,7 @@ namespace CARS
                             {
                                 HttpContext.Current.Session["reloadchat"] = CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], passenger.Split('|')[1]));
                             }
+
                             else
                             {
                                 HttpContext.Current.Session["reloadchat"] = passenger.Split('|')[3];

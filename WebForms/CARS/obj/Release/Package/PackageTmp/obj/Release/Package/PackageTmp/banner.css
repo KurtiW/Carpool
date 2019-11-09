@@ -97,6 +97,7 @@ body
     line-height: 80px;
     float: left;
     margin-left: 2em;
+    width: auto;
 }
 
 #NameUntenRechts_Label {

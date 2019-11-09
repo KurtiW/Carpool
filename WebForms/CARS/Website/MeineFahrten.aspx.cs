@@ -13,6 +13,16 @@ namespace CARS
         {
             Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
 
+
+            if (CarsUtility.PullWebRequest(string.Format("CheckChatUpdates.php?id={0}", HttpContext.Current.Session["user_id"].ToString())) == "MESSAGES AVAILABLE")
+            {
+                CHAT_MARKER.Visible = true;
+            }
+            else
+            {
+                CHAT_MARKER.Visible = false;
+            }
+
             //http://carpool.bplaced.net/Carpool/myCommitment.php?user=5
             string text = CarsUtility.PullWebRequest(string.Format("myCommitment.php?user={0}", HttpContext.Current.Session["user_id"]));
 

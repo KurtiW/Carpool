@@ -16,6 +16,14 @@ namespace CARS
 
             CARS.Website.SearchFilter s = HttpContext.Current.Session["search_filter"] as CARS.Website.SearchFilter;
 
+            if (CarsUtility.PullWebRequest(string.Format("CheckChatUpdates.php?id={0}", HttpContext.Current.Session["user_id"].ToString())) == "MESSAGES AVAILABLE")
+            {
+                CHAT_MARKER.Visible = true;
+            }
+            else 
+            {
+                CHAT_MARKER.Visible = false;
+            }
 
             string text = CarsUtility.PullWebRequest(string.Format("getSeats.php?id={0}", HttpContext.Current.Session["user_id"]));
             

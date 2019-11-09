@@ -198,6 +198,7 @@
     <Content Include="chat.css" />
     <Content Include="fahrten.css" />
     <Content Include="hauptmenu.css" />
+    <Content Include="image\baseline_notification_important_black_18dp.png" />
     <Content Include="image\citymap.jpg" />
     <Content Include="image\logo.png" />
     <Content Include="image\outline_star_black_18dp.png" />
@@ -307,18 +308,15 @@
     <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
     <Content Include="search.css" />
     <Content Include="Website\AlleFahrten.aspx" />
-    <Content Include="Website\Auswahl.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Website\Chat.aspx" />
-    <Content Include="Website\Fahrer.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Website\Hauptmenü.aspx" />
     <Content Include="Website\Login.aspx" />
     <Content Include="Website\MeineFahrten.aspx" />
     <Content Include="Website\MeineMitfahrten.aspx" />
-    <Content Include="Website\Mitfahrer.aspx" />
     <Content Include="Website\NeueFahrt.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -412,26 +410,12 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Website\Auswahl.aspx.cs">
-      <DependentUpon>Auswahl.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Website\Auswahl.aspx.designer.cs">
-      <DependentUpon>Auswahl.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Website\Chat.aspx.cs">
       <DependentUpon>Chat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Website\Chat.aspx.designer.cs">
       <DependentUpon>Chat.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Website\Fahrer.aspx.cs">
-      <DependentUpon>Fahrer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Website\Fahrer.aspx.designer.cs">
-      <DependentUpon>Fahrer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -470,13 +454,6 @@
     </Compile>
     <Compile Include="Website\MeineMitfahrten.aspx.designer.cs">
       <DependentUpon>MeineMitfahrten.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Website\Mitfahrer.aspx.cs">
-      <DependentUpon>Mitfahrer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Website\Mitfahrer.aspx.designer.cs">
-      <DependentUpon>Mitfahrer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Website\NeueFahrt.aspx.cs">

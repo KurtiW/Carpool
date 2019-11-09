@@ -120,6 +120,15 @@ namespace CARS.Website
         {
             Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
 
+            if (CarsUtility.PullWebRequest(string.Format("CheckChatUpdates.php?id={0}", HttpContext.Current.Session["user_id"].ToString())) == "MESSAGES AVAILABLE")
+            {
+                CHAT_MARKER.Visible = true;
+            }
+            else
+            {
+                CHAT_MARKER.Visible = false;
+            }
+
         }
 
         protected void Suchen_Button_Click(object sender, EventArgs e)

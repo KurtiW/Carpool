@@ -33,7 +33,8 @@
                             <li>Zurück</li>
                         </a>
                         <a href="Chat">
-                            <li>Chat</li>
+                            Chat
+                        <asp:Image ID="CHAT_MARKER" runat="server" src="../image/baseline_notification_important_black_18dp.png" Visible="true"/>    
                         </a>
                     </ul>
                 </div>

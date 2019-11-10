@@ -76,6 +76,20 @@ namespace CARS
                     name.Text = entry.Split('|')[3];
                     entryPanel.Controls.Add(name);
 
+                    Button profileButton = new Button();
+                    profileButton.CssClass = "profileButton";
+                    profileButton.Text = entry.Split('|')[3];
+
+                    profileButton.Click += delegate
+                    {
+
+                        HttpContext.Current.Session["view_user"] = entry.Split('|')[2];
+                        Response.Redirect("User");
+
+                    };
+                    name.Controls.Add(profileButton);
+
+
                     TableCell rating = new TableCell();
                     rating.Text = (float.Parse(entry.Split('|')[8].Replace(',','.')) == 0)?"n.a.":float.Parse(entry.Split('|')[8].Replace(',','.')).ToString();
                     entryPanel.Controls.Add(rating);

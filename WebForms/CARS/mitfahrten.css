@@ -19,6 +19,16 @@
     float:right;
 }
 
+.profileButton 
+{
+    background:none !important;
+    text-align:left;
+    font-size: inherit;
+}
+
+.profileButton:hover 
+{
+text-decoration:underline;}
 .button 
 {
     float:right;

@@ -35,19 +35,7 @@
                         </a>
                         <a href="Chat">
                             Chat
-                            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-                                
-                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                            <Triggers>
-                            <asp:AsyncPostBackTrigger  ControlID="MARKER_UPDATE" EventName="Tick" />
-                            </Triggers>    <ContentTemplate> 
-                            <asp:Image ID="CHAT_MARKER" runat="server" src="../image/baseline_notification_important_black_18dp.png" Visible="true"/>    
-
-                            </ContentTemplate> 
-                            </asp:UpdatePanel>
-
-
-<!--<asp:Timer ID="MARKER_UPDATE" runat="server" Interval="5000" OnTick="MARKER_UPDATE_Tick"></asp:Timer>-->
+                                                        <asp:Image ID="CHAT_MARKER" runat="server" src="../image/baseline_notification_important_black_18dp.png" Visible="true"/>    
                         </a>
                     </ul>
                 </div>

@@ -20,6 +20,12 @@ if(isset($_GET['id']))
         {
             while($row = $result->fetch_assoc()) 
             {
+                if($row["AVG(`RATING`)"] == null)
+                {
+                    echo "NO DATA AVAILABLE";
+                    exit;
+                    
+                }
 
                 echo $row["AVG(`RATING`)"]."|".$row["ID"]."|".$row["NAME"]."|".$row["EMAIL"]. ";<br>";
                  

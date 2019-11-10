@@ -51,9 +51,15 @@ if(isset($_GET['user']))
                                 {
                                     while($b = $a->fetch_assoc()) 
                                     {
-                                        echo $b["AVG(`RATING`)"] . ";<br>";
+                                        echo $b["AVG(`RATING`)"] . "|";
                                     }
                                 }
+                                else
+                                {
+                                    echo "|";
+                                }
+                                                                    echo CheckChat($_GET['user'], $row_["userID"], $conn). ";<br>";
+
                             }
                         }
                     }
@@ -68,4 +74,28 @@ else
     echo "query error";
 }
 mysqli_close($conn);
+
+function CheckChat($id1, $id2, $conn)
+    {
+    $a = -1;
+    
+    if($id1 == $id2){
+        return $a;
+    }
+    
+    $s = "SELECT * FROM `CHAT_USER` a JOIN `CHAT_USER` b on b.`CHAT_ID` = a.`CHAT_ID` WHERE a.`USER_ID` = '".$id1."' and b.`USER_ID` = '".$id2."';";
+    
+    $r = $conn->query($s);
+
+    if ($r->num_rows > 0) 
+    {
+        while($row_ = $r->fetch_assoc()) 
+        {
+            $a = $row_["CHAT_ID"];
+       }
+       
+    }
+
+        return $a;
+    }
 ?>

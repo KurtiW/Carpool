@@ -59,8 +59,11 @@ namespace CARS.Website
                     entryPanel.CssClass = "Panel";
                     MEINEMITFAHRTEN_PANEL.Controls.Add(entryPanel);
 
+                    
+
+
                     Button b = new Button();
-                    b.Text = "Rate";
+                    b.Text = "Bewerten";
                     b.CssClass = "button";
                     //b.Click += new EventHandler(RejectSeat);
                     b.Click += delegate
@@ -72,6 +75,29 @@ namespace CARS.Website
 
                     };
                     entryPanel.Controls.Add(b);
+
+                    Button c = new Button();
+                    c.Click += delegate
+                    {
+
+                        if (entry.Split('|')[8] == "-1")
+                        {
+                            HttpContext.Current.Session["reloadchat"] = CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], entry.Split('|')[8]));
+                        }
+
+                        else
+                        {
+                            HttpContext.Current.Session["reloadchat"] = entry.Split('|')[8];
+
+                        }
+
+                        Response.Redirect("Chat");
+
+                    };
+                    c.Text = "Chat";
+                    c.CssClass = "button";
+
+                    entryPanel.Controls.Add(c);
 
                     Label Start = new Label();
                     Start.Text = entry.Split('|')[4];
@@ -92,6 +118,19 @@ namespace CARS.Website
                     UserName.Text = entry.Split('|')[7];
                     UserName.CssClass = "UserName_Label";
                     entryPanel.Controls.Add(UserName);
+
+                    Button profileButton = new Button();
+                    profileButton.CssClass = "profileButton";
+                    profileButton.Text = entry.Split('|')[7];
+
+                    profileButton.Click += delegate
+                    {
+
+                        HttpContext.Current.Session["view_user"] = entry.Split('|')[2];
+                        Response.Redirect("User");
+
+                    };
+                    UserName.Controls.Add(profileButton);
 
 
                 }
@@ -146,6 +185,19 @@ namespace CARS.Website
                     UserName.Text = entry.Split('|')[7];
                     UserName.CssClass = "UserName_Label";
                     entryPanel.Controls.Add(UserName);
+
+                    Button profileButton = new Button();
+                    profileButton.CssClass = "profileButton";
+                    profileButton.Text = entry.Split('|')[7];
+
+                    profileButton.Click += delegate
+                    {
+
+                        HttpContext.Current.Session["view_user"] = entry.Split('|')[2];
+                        Response.Redirect("User");
+
+                    };
+                    UserName.Controls.Add(profileButton);
 
                 }
             }

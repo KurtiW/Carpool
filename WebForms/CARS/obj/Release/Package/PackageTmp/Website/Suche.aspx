@@ -37,6 +37,7 @@
                         </a>
                         <a href="Chat">
                             Chat
+                                                       <asp:Image ID="CHAT_MARKER" runat="server" src="../image/baseline_notification_important_black_18dp.png" Visible="true"/>    
                         </a>
                     </div>
                 </div>

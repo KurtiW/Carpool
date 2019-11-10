@@ -22,6 +22,8 @@ namespace CARS.Website
             public string chat_name;
             public string chat_createdat;
             public string last_update;
+            public string unreadmessages;
+
 
 
             public List<Chat_User> users = new List<Chat_User>();
@@ -48,7 +50,7 @@ namespace CARS.Website
                 chat_name = chat.Split('|')[1];
                 chat_createdat = chat.Split('|')[2];
                 last_update = chat.Split('|')[3];
-
+                unreadmessages = chat.Split('|')[4];
 
                 if (chat_name == "") 
                 {
@@ -89,6 +91,7 @@ namespace CARS.Website
                     chat_user_index = user.Split('|')[0];
                     chat_user_id = user.Split('|')[1];
                     chat_user_name = user.Split('|')[2];
+
                 }
 
                 
@@ -104,6 +107,7 @@ namespace CARS.Website
 
                 public Message(string m)
                 {
+
                     id = m.Split('|')[0];
                     user_id = m.Split('|')[1];
                     message = m.Split('|')[2];
@@ -143,7 +147,7 @@ namespace CARS.Website
                 List.Controls.Add(chat_list_panel);
 
                 Button chatoption = new Button();
-                chatoption.Text = ci.chat_name;
+                chatoption.Text = (ci.unreadmessages != "0")? "(" + ci.unreadmessages + ") " + ci.chat_name : ci.chat_name;
                 chatoption.CssClass += " chatoption";
 
                 chatoption.Click += delegate
@@ -198,7 +202,7 @@ namespace CARS.Website
             t.Enabled = false;
 
 
-            string chat_history = CarsUtility.PullWebRequest(string.Format("viewChat.php?id={0}", (HttpContext.Current.Session["currentCI"] as CARS.Website.Chat.Chat_Info).chat_id)).Replace("<br>", "");
+            string chat_history = CarsUtility.PullWebRequest(string.Format("viewChat.php?id={0}&user={1}", (HttpContext.Current.Session["currentCI"] as CARS.Website.Chat.Chat_Info).chat_id, HttpContext.Current.Session["user_id"])).Replace("<br>", "");
             System.Diagnostics.Debug.WriteLine(chat_history);
             (HttpContext.Current.Session["currentCI"] as CARS.Website.Chat.Chat_Info).history.Clear();
             System.Diagnostics.Debug.WriteLine("history cleared");
@@ -231,12 +235,12 @@ namespace CARS.Website
                     {
                         string[] days = new string[] 
                         {
-                            "Montag","Dienstag","Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"
+                            "Sonntag","Montag","Dienstag","Mittwoch", "Donnerstag", "Freitag", "Samstag"
                         };
 
 
 
-                        d.Text = days[((int) messageTime.DayOfWeek) -1];
+                        d.Text = days[((int) messageTime.DayOfWeek)];
 
                     }
                     else 

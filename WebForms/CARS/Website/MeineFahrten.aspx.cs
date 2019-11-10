@@ -102,6 +102,19 @@ namespace CARS
                         name.CssClass = "name";
                         p.Controls.Add(name);
 
+                        Button profileButton = new Button();
+                        profileButton.CssClass = "profileButton";
+                        profileButton.Text = passenger.Split('|')[2];
+
+                        profileButton.Click += delegate
+                        {
+
+                            HttpContext.Current.Session["view_user"] = passenger.Split('|')[1];
+                            Response.Redirect("User");
+
+                        };
+                        name.Controls.Add(profileButton);
+
                         /*Label rating = new Label();
                         rating.Text = (passenger.Split('|')[4] == "") ? "n. a." : passenger.Split('|')[4];
                         p.Controls.Add(rating);
@@ -139,14 +152,14 @@ namespace CARS
                         c.Click += delegate
                         {
 
-                            if (passenger.Split('|')[3] == "-1")
+                            if (passenger.Split('|')[4] == "-1")
                             {
                                 HttpContext.Current.Session["reloadchat"] = CarsUtility.PullWebRequest(string.Format("createChat.php?id={0}&user={1}", HttpContext.Current.Session["user_id"], passenger.Split('|')[1]));
                             }
 
                             else
                             {
-                                HttpContext.Current.Session["reloadchat"] = passenger.Split('|')[3];
+                                HttpContext.Current.Session["reloadchat"] = passenger.Split('|')[4];
 
                             }
 

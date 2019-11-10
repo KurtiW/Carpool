@@ -22,9 +22,14 @@ namespace CARS.Website
                 CHAT_MARKER.Visible = false;
             }
 
-            string text = CarsUtility.PullWebRequest(string.Format("viewUser.php?id={0}",5));// HttpContext.Current.Session["view_user"]));
+            string text = CarsUtility.PullWebRequest(string.Format("viewUser.php?id={0}", (HttpContext.Current.Session["view_user"].ToString() == "") ? HttpContext.Current.Session["user_id"].ToString() : HttpContext.Current.Session["view_user"].ToString()));
 
+            if (text == "NO DATA AVAILABLE")
+            {
+                return;
+            }
 
+            HttpContext.Current.Session["view_user"] = "";
             string[] entrys = text.Split('$');
 
             string user = entrys[0];

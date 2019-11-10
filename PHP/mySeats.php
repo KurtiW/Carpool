@@ -34,7 +34,7 @@ if(isset($_GET['user']))
         {
             while($row_ = $result->fetch_assoc()) 
             {
-                echo $row_["placeID"] . "|" . $row_["rideID"]. "|" . $row_["ownerID"]. "|" . $row_["count"]. "|" . $row_["rideStart"]. "|" . $row_["rideEnd"]. "|" . $row_["rideDeparture"] ."|". $row_["userNAME"] . ";<br>";
+                echo $row_["placeID"] . "|" . $row_["rideID"]. "|" . $row_["ownerID"]. "|" . $row_["count"]. "|" . $row_["rideStart"]. "|" . $row_["rideEnd"]. "|" . $row_["rideDeparture"] ."|". $row_["userNAME"] . "|".CheckChat($_GET['user'], $row_["ownerID"], $conn). ";<br>";
             }
         }
     }
@@ -49,6 +49,28 @@ else
 
 mysqli_close($conn);
 
+function CheckChat($id1, $id2, $conn)
+    {
+    $a = -1;
+    
+    if($id1 == $id2){
+        return $a;
+    }
+    
+    $s = "SELECT * FROM `CHAT_USER` a JOIN `CHAT_USER` b on b.`CHAT_ID` = a.`CHAT_ID` WHERE a.`USER_ID` = '".$id1."' and b.`USER_ID` = '".$id2."';";
+    
+    $r = $conn->query($s);
 
+    if ($r->num_rows > 0) 
+    {
+        while($row_ = $r->fetch_assoc()) 
+        {
+            $a = $row_["CHAT_ID"];
+       }
+       
+    }
+
+        return $a;
+    }
 
 ?>

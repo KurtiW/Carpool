@@ -103,3 +103,13 @@ h1
     display:none;
 }
 
+.profileButton 
+{
+    background:none !important;
+    text-align:left;
+    font-size: inherit;
+}
+
+.profileButton:hover 
+{
+text-decoration:underline;}

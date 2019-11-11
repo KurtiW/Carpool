@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,6 +10,12 @@ namespace CARS
 {
     public partial class AlleFahrten : System.Web.UI.Page
     {
+        protected void Username_Label_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.Session["view_user"] = "";
+            Response.Redirect("User");
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
@@ -91,7 +98,42 @@ namespace CARS
 
 
                     TableCell rating = new TableCell();
-                    rating.Text = (float.Parse(entry.Split('|')[8].Replace(',','.')) == 0)?"n.a.":float.Parse(entry.Split('|')[8].Replace(',','.')).ToString();
+                    float r = float.Parse(entry.Split('|')[8].Replace(',', '.'), CultureInfo.InvariantCulture);
+                    if (r == 0)
+                    {
+                        rating.Text = "n.a.";
+                    }
+                    else
+                    {
+                        for (int i = 0; i < 5; i++)
+                        {
+                            Panel star_bot = new Panel();
+                            star_bot.CssClass = "RATING_STAR";
+                            rating.Controls.Add(star_bot);
+                            Panel star_top = new Panel();
+                            star_top.CssClass = "fullStar";
+
+                            if (i == Math.Floor(r))
+                            {
+                                star_top.Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);", ((1 - (r % 1f)) * 100f).ToString().Replace(',', '.')));
+                            }
+                            else
+                            {
+                                if (i < r)
+                                {
+                                    star_top.Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);", 0));
+                                }
+                                else
+                                {
+                                    star_top.Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);", 100));
+
+                                }
+                            }
+                            star_bot.Controls.Add(star_top);
+
+                        }
+                    }
+
                     entryPanel.Controls.Add(rating);
 
                     TableCell count = new TableCell();

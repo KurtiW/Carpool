@@ -53,6 +53,12 @@ namespace CARS.Website
             }
 
         }
+
+        protected void Username_Label_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.Session["view_user"] = "";
+            Response.Redirect("User");
+        }
     }
 
 

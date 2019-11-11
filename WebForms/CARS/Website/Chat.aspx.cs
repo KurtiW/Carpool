@@ -293,5 +293,11 @@ namespace CARS.Website
             Message_IF.Text = "";
 
         }
+
+        protected void Username_Label_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.Session["view_user"] = "";
+            Response.Redirect("User");
+        }
     }
 }

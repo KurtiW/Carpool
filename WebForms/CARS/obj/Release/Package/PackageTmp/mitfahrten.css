@@ -5,6 +5,7 @@
     border-bottom-width:0.1px;
     border-bottom-color:rgba(0,0,0,0.2);
     margin:1em;
+    clear: both;
 }
 .Start_Label, .End_Label, .Time_Label, .UserName_Label 
 {
@@ -19,12 +20,24 @@
     float:right;
 }
 
+.profileButton 
+{
+    background:none !important;
+    text-align:left;
+    font-size: inherit;
+}
+
+.profileButton:hover 
+{
+text-decoration:underline;}
 .button 
 {
     float:right;
-    height:80%;
-    width:10em;
+    height:3em;
+    width:5em;
     font-size:large;
+    background-color:var(--main-color);
+    margin: 0 0 0 1em;
 }
 
 .Big_Label 
@@ -33,4 +46,5 @@
     display: block;
     text-align: center;
     padding: 15px;
+    font-size:larger;
 }

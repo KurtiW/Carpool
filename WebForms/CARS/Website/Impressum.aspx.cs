@@ -14,5 +14,11 @@ namespace CARS.Website
             Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
 
         }
+
+        protected void Username_Label_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.Session["view_user"] = "";
+            Response.Redirect("User");
+        }
     }
 }

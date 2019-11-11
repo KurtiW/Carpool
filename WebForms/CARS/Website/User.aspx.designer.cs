@@ -28,7 +28,7 @@ namespace CARS.Website {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Username_Label;
+        protected global::System.Web.UI.WebControls.Button Username_Label;
         
         /// <summary>
         /// CHAT_MARKER control.
@@ -76,6 +76,15 @@ namespace CARS.Website {
         protected global::System.Web.UI.WebControls.Panel RATE1;
         
         /// <summary>
+        /// RATE1_Full control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel RATE1_Full;
+        
+        /// <summary>
         /// RATE2 control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,15 @@ namespace CARS.Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel RATE2;
+        
+        /// <summary>
+        /// RATE2_Full control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel RATE2_Full;
         
         /// <summary>
         /// RATE3 control.
@@ -94,6 +112,15 @@ namespace CARS.Website {
         protected global::System.Web.UI.WebControls.Panel RATE3;
         
         /// <summary>
+        /// RATE3_Full control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel RATE3_Full;
+        
+        /// <summary>
         /// RATE4 control.
         /// </summary>
         /// <remarks>
@@ -103,6 +130,15 @@ namespace CARS.Website {
         protected global::System.Web.UI.WebControls.Panel RATE4;
         
         /// <summary>
+        /// RATE4_Full control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel RATE4_Full;
+        
+        /// <summary>
         /// RATE5 control.
         /// </summary>
         /// <remarks>
@@ -110,6 +146,15 @@ namespace CARS.Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel RATE5;
+        
+        /// <summary>
+        /// RATE5_Full control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel RATE5_Full;
         
         /// <summary>
         /// Rating_Panel control.

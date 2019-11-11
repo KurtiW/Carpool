@@ -17,7 +17,7 @@
             <div class="header">
 
                 <img src="../image/logo.png" />
-                <asp:Label ID="Username_Label" runat="server" Text="Username"></asp:Label>
+                    <asp:Button ID="Username_Label" runat="server" Text="Username" OnClick="Username_Label_Click"/>
 
                 <div class="inner_header">
                     <div class="name_container">

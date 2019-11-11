@@ -22,7 +22,7 @@ if(isset($_GET['id']))
                 echo $row["CHAT_ID"]."|".$row["NAME"]."|".$row["CREATEDAT"]."|".$row["LAST_UPDATE"]. "|";
                  
                 
-                $sql_ = "SELECT * FROM `CHAT_USER` INNER JOIN `MESSAGES` ON `MESSAGES`.`CHAT_ID` = `CHAT_USER`.`CHAT_ID` WHERE `CHAT_USER`.`USER_ID` = '{$_GET['id']}' AND `CHAT_USER`.`CHAT_ID` = '{$row["CHAT_ID"]}' AND `CHAT_USER`.`LAST_SEEN` < `MESSAGES`.`CREATEDAT`";
+                $sql_ = "SELECT * FROM `CHAT_USER` INNER JOIN `MESSAGES` ON `MESSAGES`.`CHAT_ID` = `CHAT_USER`.`CHAT_ID` WHERE `CHAT_USER`.`USER_ID` = '{$_GET['id']}' AND `CHAT_USER`.`CHAT_ID` = '{$row["CHAT_ID"]}' AND `CHAT_USER`.`LAST_SEEN` <= `MESSAGES`.`CREATEDAT`";
                 
                 
                 $r = $conn->query($sql_);

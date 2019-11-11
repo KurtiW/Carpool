@@ -18,7 +18,7 @@
                 <div class="header">
 
                     <img src="../image/logo.png" />
-                                        <asp:Label ID="Username_Label" runat="server" Text="Username"></asp:Label>
+                    <asp:Button ID="Username_Label" runat="server" Text="Username" OnClick="Username_Label_Click"/>
 
                     <div class="inner_header">
                         <div class="name_container">
@@ -52,11 +52,25 @@
             <div id="User_MAIN">
                 <asp:Label ID="Username_Text" runat="server" Text="Username"></asp:Label>
 
-                <asp:Panel ID="RATE1" runat="server" ></asp:Panel>
-                <asp:Panel ID="RATE2" runat="server" ></asp:Panel>
-                <asp:Panel ID="RATE3" runat="server" ></asp:Panel>
-                <asp:Panel ID="RATE4" runat="server" ></asp:Panel>
-                <asp:Panel ID="RATE5" runat="server" ></asp:Panel>
+                <asp:Panel ID="RATE1" runat="server" CssClass="RATING_STAR">
+                    <asp:Panel ID="RATE1_Full" runat="server" CssClass="fullStar" />
+                </asp:Panel>
+                <asp:Panel ID="RATE2" runat="server" CssClass="RATING_STAR">
+                    <asp:Panel ID="RATE2_Full" runat="server" CssClass="fullStar"/>
+
+                </asp:Panel>
+                <asp:Panel ID="RATE3" runat="server" CssClass="RATING_STAR">
+                    <asp:Panel ID="RATE3_Full" runat="server" CssClass="fullStar"/>
+
+                </asp:Panel>
+                <asp:Panel ID="RATE4" runat="server" CssClass="RATING_STAR">
+                    <asp:Panel ID="RATE4_Full" runat="server" CssClass="fullStar"/>
+
+                </asp:Panel>
+                <asp:Panel ID="RATE5" runat="server" CssClass="RATING_STAR">
+                    <asp:Panel ID="RATE5_Full" runat="server" CssClass="fullStar"/>
+
+                </asp:Panel>
             </div>
         <asp:Panel ID="Rating_Panel" runat="server">
             

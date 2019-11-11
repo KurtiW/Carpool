@@ -4,7 +4,7 @@ include('connect.php');
 
 if(isset($_GET['id']))
 {
-    $sql = "SELECT * FROM `CHAT_USER` INNER JOIN `MESSAGES` ON `MESSAGES`.`CHAT_ID` = `CHAT_USER`.`CHAT_ID` WHERE `CHAT_USER`.`USER_ID` = '{$_GET['id']}' AND `CHAT_USER`.`LAST_SEEN` < `MESSAGES`.`CREATEDAT` LIMIT 1;";
+    $sql = "SELECT * FROM `CHAT_USER` INNER JOIN `MESSAGES` ON `MESSAGES`.`CHAT_ID` = `CHAT_USER`.`CHAT_ID` WHERE `CHAT_USER`.`USER_ID` = '{$_GET['id']}' AND `CHAT_USER`.`LAST_SEEN` <= `MESSAGES`.`CREATEDAT` LIMIT 1;";
 
     $checked = false;
     

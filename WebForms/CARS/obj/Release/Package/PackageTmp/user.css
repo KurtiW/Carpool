@@ -28,7 +28,16 @@
     border:0; 
     outline: none;
     background-color: transparent;
-        display: inline-block;
+    display: inline-block;
+}
+
+.fullStar 
+{
+    width:100%;
+    height:100%;
+    background-image:url("image/star-24px.svg");
+    background-size:contain;
+
 }
 
 .active 

@@ -9,7 +9,11 @@ namespace CARS.Website
 {
     public partial class Rating : System.Web.UI.Page
     {
-
+        protected void Username_Label_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.Session["view_user"] = "";
+            Response.Redirect("User");
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -10,14 +10,14 @@
 .Suche {
     height: 100%;
     width: 45%;
+    min-width: 500px;
     float: left;
     background-color: var(--main-color);
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50vh;
+    border-top-right-radius: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-right: 25%;
 }
 
 .Rechts {

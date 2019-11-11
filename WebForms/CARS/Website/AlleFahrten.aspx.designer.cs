@@ -28,7 +28,7 @@ namespace CARS {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Username_Label;
+        protected global::System.Web.UI.WebControls.Button Username_Label;
         
         /// <summary>
         /// CHAT_MARKER control.
@@ -38,15 +38,6 @@ namespace CARS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image CHAT_MARKER;
-        
-        /// <summary>
-        /// MARKER_UPDATE control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.Timer MARKER_UPDATE;
         
         /// <summary>
         /// MITFAHRER_ALLEFAHRTEN_PANEL control.

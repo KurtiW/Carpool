@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,6 +10,12 @@ namespace CARS.Website
 {
     public partial class User : System.Web.UI.Page
     {
+
+        protected void Username_Label_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.Session["view_user"] = "";
+            Response.Redirect("User");
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             Username_Label.Text = HttpContext.Current.Session["user_name"].ToString();
@@ -26,6 +33,22 @@ namespace CARS.Website
 
             if (text == "NO DATA AVAILABLE")
             {
+                Username_Text.Text = HttpContext.Current.Session["user_name"].ToString();
+
+                Panel[] rateButtons_ = new Panel[]
+            {
+                RATE1_Full,RATE2_Full,RATE3_Full,RATE4_Full,RATE5_Full
+            };
+                //RATE5_Full.Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);", rating));
+                for (int i = 0; i < 5; i++)
+                {
+                    
+                            rateButtons_[i].Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);", 100));
+
+                       
+
+                }
+
                 return;
             }
 
@@ -36,16 +59,42 @@ namespace CARS.Website
 
             Username_Text.Text = user.Split('|')[2];
 
-            float rating = float.Parse(user.Split('|')[0].Replace('.',','));
-            rating = (float)Math.Round(rating);
+            float rating = float.Parse(user.Split('|')[0].Replace(',', '.'), CultureInfo.InvariantCulture);
+            //rating = (float)Math.Round(rating);
 
             System.Diagnostics.Debug.WriteLine(rating);
 
-            RATE1.CssClass = "RATING_STAR active";
-            RATE2.CssClass = (rating > 1) ? "RATING_STAR active" : "RATING_STAR";
-            RATE3.CssClass = (rating > 2) ? "RATING_STAR active" : "RATING_STAR";
-            RATE4.CssClass = (rating > 3) ? "RATING_STAR active" : "RATING_STAR";
-            RATE5.CssClass = (rating > 4) ? "RATING_STAR active" : "RATING_STAR";
+            Panel[] rateButtons = new Panel[]
+            {
+                RATE1_Full,RATE2_Full,RATE3_Full,RATE4_Full,RATE5_Full
+            };
+            //RATE5_Full.Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);", rating));
+            for (int i = 0; i < 5; i++)
+            {
+                if (i == Math.Floor(rating))
+                {
+                    rateButtons[i].Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);",((1- (rating % 1f)) * 100f).ToString().Replace(',','.')));
+                }
+                else 
+                {
+                    if (i < rating)
+                    {
+                        rateButtons[i].Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);", 0));
+                    }
+                    else 
+                    {
+                        rateButtons[i].Attributes.Add("style", string.Format("clip-path:inset(0px {0}% 0px 0px);", 100));
+
+                    }
+                }
+ 
+            }
+
+            //RATE1_Full.CssClass = "RATING_STAR active";
+            //RATE2.CssClass = (rating > 1) ? "RATING_STAR active" : "RATING_STAR";
+            //RATE3.CssClass = (rating > 2) ? "RATING_STAR active" : "RATING_STAR";
+            //RATE4.CssClass = (rating > 3) ? "RATING_STAR active" : "RATING_STAR";
+            //RATE5.CssClass = (rating > 4) ? "RATING_STAR active" : "RATING_STAR";
 
             foreach (string entry_ in entrys[1].Split(';'))
             {

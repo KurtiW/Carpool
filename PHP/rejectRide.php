@@ -19,7 +19,7 @@ WHERE `RIDES_ID` = '".$_GET['id']."';";
             
             $chat = CheckChat(0,$row_["mitfahrerID"], $conn);
             
-            if(chat != -1)
+            if($chat != -1)
             {
             
                 $text = "Der Nutzer {$row_["fahrerName"]} hat seine Fahrt mit der Abfahrtszeit {$row_["time"]} abgesagt.";

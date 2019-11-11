@@ -37,7 +37,7 @@ namespace CARS {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Username_Label;
+        protected global::System.Web.UI.WebControls.Button Username_Label;
         
         /// <summary>
         /// CHAT_MARKER control.

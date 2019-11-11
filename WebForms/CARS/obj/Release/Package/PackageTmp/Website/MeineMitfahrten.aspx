@@ -17,7 +17,7 @@
           <div class="header">
 
                     <img src="../image/logo.png" />
-                    <asp:Label ID="Username_Label" runat="server" Text="Username"></asp:Label>
+                    <asp:Button ID="Username_Label" runat="server" Text="Username" OnClick="Username_Label_Click"/>
 
                     <div class="inner_header">
                         <div class="name_container">
@@ -33,7 +33,7 @@
                         </a>
                         <a href="Chat">
                             Chat
-                                                        <asp:Image ID="CHAT_MARKER" runat="server" src="../image/baseline_notification_important_black_18dp.png" Visible="true"/>    
+                            <asp:Image ID="CHAT_MARKER" runat="server" src="../image/baseline_notification_important_black_18dp.png" Visible="true"/>    
                         </a>
                     </div>
                 </div>

@@ -124,3 +124,15 @@ body
     max-width:900px;
     margin:auto;
 }
+#Username_Label 
+{
+    background: none !important;
+    border: none !important;
+    text-align: left;
+    font-size: inherit;
+}
+
+#Username_Label:hover
+{
+    text-decoration:underline;
+}

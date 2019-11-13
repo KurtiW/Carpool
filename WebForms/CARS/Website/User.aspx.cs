@@ -33,7 +33,7 @@ namespace CARS.Website
 
             if (text == "NO DATA AVAILABLE")
             {
-                Username_Text.Text = HttpContext.Current.Session["user_name"].ToString();
+                Username_Text.Text = "Noch keine Rezensionen vorhanden";
 
                 Panel[] rateButtons_ = new Panel[]
             {

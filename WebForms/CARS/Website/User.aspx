@@ -22,7 +22,7 @@
 
                     <div class="inner_header">
                         <div class="name_container">
-                            <h1>Meine Fahrten</h1>
+                            <h1>Bewertungen</h1>
 
 
                         </div>

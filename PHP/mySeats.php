@@ -14,11 +14,11 @@ if(isset($_GET['user']))
     `RIDES`.`DEPARTURE` rideDeparture,
     `USER`.`NAME` userNAME
     
-                FROM `PLACES` 
-                INNER JOIN `RIDES` ON `RIDES`.`ID` = `PLACES`.`RIDES_ID`
-                INNER JOIN `USER` ON `USER`.`ID` = `RIDES`.`OWNER`
-                WHERE `PLACES`.`USER_ID` = '".$_GET['user']."'
-                ORDER BY `DEPARTURE`;";
+    FROM `PLACES` 
+    INNER JOIN `RIDES` ON `RIDES`.`ID` = `PLACES`.`RIDES_ID`
+    INNER JOIN `USER` ON `USER`.`ID` = `RIDES`.`OWNER`
+    WHERE `PLACES`.`USER_ID` = '".$_GET['user']."'
+    ORDER BY `DEPARTURE`;";
 
     $result = $conn->query($sql);
     
@@ -50,27 +50,28 @@ else
 mysqli_close($conn);
 
 function CheckChat($id1, $id2, $conn)
-    {
-    $a = -1;
-    
-    if($id1 == $id2){
-        return $a;
-    }
-    
-    $s = "SELECT * FROM `CHAT_USER` a JOIN `CHAT_USER` b on b.`CHAT_ID` = a.`CHAT_ID` WHERE a.`USER_ID` = '".$id1."' and b.`USER_ID` = '".$id2."';";
-    
-    $r = $conn->query($s);
+{
+$a = -1;
 
-    if ($r->num_rows > 0) 
-    {
-        while($row_ = $r->fetch_assoc()) 
-        {
-            $a = $row_["CHAT_ID"];
-       }
-       
-    }
+if($id1 == $id2)
+{
+    return $a;
+}
 
-        return $a;
-    }
+$s = "SELECT * FROM `CHAT_USER` a JOIN `CHAT_USER` b on b.`CHAT_ID` = a.`CHAT_ID` WHERE a.`USER_ID` = '".$id1."' and b.`USER_ID` = '".$id2."';";
+
+$r = $conn->query($s);
+
+if ($r->num_rows > 0) 
+{
+    while($row_ = $r->fetch_assoc()) 
+    {
+        $a = $row_["CHAT_ID"];
+   }
+
+}
+
+    return $a;
+}
 
 ?>

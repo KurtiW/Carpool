@@ -21,7 +21,7 @@
 
                 <div class="inner_header">
                     <div class="name_container">
-                        <h1>Meine Mitfahrten</h1>
+                        <h1>Bewerten</h1>
 
 
                     </div>

@@ -9,742 +9,271 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <h1>Impressum
-                            </h1>
-                     
-                        <p>
-                            <span>Angaben gemäß §5 TMG<br />
-                            </span>
-
-                            
-                        </p>
-                        <p>
-                            <span>Maurice Baumgart<a name="_GoBack"></a><br /> Schmiedestraße 3<br /> 38531 Rötgesbüttel<br />
-                            </span>
-                        </p>
-                        
-                            <h3>Kontakt</h3><span>E-Mail: </span><a href="mailto:IGShuttle@web.de"><span>IGShuttle@web.de</span></a><span><br />
-                            </span>
-
-                        
-                            <h3>Disclaimer – rechtliche Hinweise
-                            </h3>
-                        
-                        <p class="MsoNormal">
-                            <span>§ 1 Warnhinweis zu Inhalten<br /> Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.<br />
-                            <br />
-                            § 2 Externe Links<br /> Diese Website enthält Verknüpfungen zu Websites Dritter (&quot;externe Links&quot;). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.<br />
-                            <br />
-                            § 3 Urheber- und Leistungsschutzrechte<br /> Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.<br />
-                            <br />
-                            Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.<br />
-                            <br />
-                            § 4 Besondere Nutzungsbedingungen<br /> Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.</span></p>
-
-                        <p>
-                                    <strong>
-                                        Allgemeine Geschäftsbedingungen
-                                    </strong>
-                                </p>
-                                <p>
-                                    <strong>§ 1 Geltungsbereich</strong>
-                                </p>
-                                <p>
-                                    a) Die nachfolgenden Bedingungen des
-                                    Auftragnehmers (... gelten für alle
-                                    zwischen
-                                </p>
-                                <p>
-                                    dem Auftragnehmer und dem Auftraggeber
-                                    abgeschlossenen Verträge, insbesondere über
-                                    die Vermietung von Geräten, sowie den
-                                    Verkauf und die Lieferung von Waren und für
-                                    Dienst- und Werkleistungen. Die besonderen
-                                    Regelungen dieser Bedingungen für bestimmte
-                                    Vertragstypen finden bei dem Abschluss
-                                    eines entsprechenden Vertrages zwischen dem
-                                    Auftraggeber und dem Auftragnehmer
-                                    zusätzlich zu den allgemeinen Regelungen
-                                    Anwendung.
-                                </p>
-                                <p>
-                                    b) Mit der Erteilung des Auftrags erklärt
-                                    sich der Auftraggeber mit diesen
-                                    Bedingungen einverstanden.
-                                </p>
-                                <p>
-                                    c) Entgegenstehende oder von diesen AGB
-                                    abweichende Bedingungen des Auftraggebers
-                                    erkennt der Auftragnehmer nicht an, es sei
-                                    denn, er hätte ausdrücklich schriftlich
-                                    ihrer Geltung zugestimmt.
-                                </p>
-                                <p>
-                                    d) Diese Bedingungen gelten sowohl
-                                    gegenüber Verbrauchern als auch gegenüber
-                                    Unternehmern, es sei denn, in der
-                                    jeweiligen Klausel wird eine
-                                    Differenzierung vorgenommen.
-                                </p>
-                                <p>
-                                    <strong>
-                                        § 2 Angebot und Vertragsschluss
-                                    </strong>
-                                </p>
-                                <p>
-                                    a) Ein Vertrag kommt dadurch zustande, dass
-                                    der Auftraggeber die Auftragsbestätigung
-                                    unterzeichnet. Lediglich schriftliche
-                                    Angebote des Auftragnehmers sind bindend,
-                                    telefonische oder Angebote per email sind
-                                    nicht bindend.
-                                </p>
-                                <p>
-                                    b) Abbildungen, Zeichnungen, sowie andere
-                                    Unterlagen, die zu den unverbindlichen
-                                    Angeboten des Auftragnehmers gehören
-                                    bleiben im Eigentum des Auftragnehmers und
-                                    sind nur annährend maßgebend, soweit sie
-                                    nicht von ihm ausdrücklich als verbindlich
-                                    bezeichnet worden sind.
-                                </p>
-                                <p>
-                                    <strong>§ 3 Zahlungsbedingungen</strong>
-                                </p>
-                                <p>
-                                    a) Der zu zahlende Betrag ist innerhalb von
-                                    netto 7 Tagen nach Auftrags- oder
-                                    Rechnungsabschluss zur Zahlung fällig,
-                                    soweit sich aus der Auftragsbestätigung
-                                    kein anderes Zahlungsziel ergibt. Die
-                                    Zahlungsverpflichtung ist durch Überweisung
-                                    auf das angegebene Konto des Auftragnehmers
-                                    oder durch Barzahlung zu erfüllen.
-                                </p>
-                                <p>
-                                    b) Der Auftraggeber ist zur Aufrechnung,
-                                    auch wenn Mängelrügen oder Gegenansprüche
-                                    geltend gemacht werden nur berechtigt, wenn
-                                    die Gegenansprüche rechtskräftig
-                                    festgestellt, von dem Auftragnehmer
-                                    anerkannt wurden oder unstreitig sind. Zur
-                                    Ausübung eines Zurückbehaltungsrechts ist
-                                    der Auftraggeber nur befugt, wenn sein
-                                    Gegenanspruch auf dem gleichen
-                                    Vertragsverhältnis beruht.
-                                </p>
-                                <p>
-                                    <strong>
-                                        § 4 Leistungsumfang des Auftragnehmers
-                                    </strong>
-                                </p>
-                                <p>
-                                    a) Der Umfang der vom Auftragnehmer im
-                                    einzelnen geschuldeten Leistungen ergibt
-                                    sich aus dem jeweiligen Angebot, der
-                                    Auftragsbestätigung und diesen
-                                    Vertragsbedingungen.
-                                </p>
-                                <p>
-                                    b) Ist eine Lasershow Teil des Vertrages
-                                    zwischen dem Auftraggeber und dem
-                                    Auftragnehmer stellt der Letztere einen
-                                    Laserschutzbeauftragten, der in
-                                    ausschließlich beratender Funktion den Auf-
-                                    und Abbau und den Betrieb der Laseranlage
-                                    überwacht.
-                                </p>
-                                <p>
-                                    <strong>
-                                        § 5 Pflichten des Auftraggebers
-                                    </strong>
-                                </p>
-                                <p>
-                                    a) Der Auftraggeber erbringt als
-                                    wesentliche Vertragspflicht vereinbarte und
-                                    sonstige Mitwirkungsleistungen, sowie
-                                    Bereitstellungen in dem erforderlichen
-                                    Umfang bzw. der benötigten Qualität und zu
-                                    den vereinbarten Terminen und stellt dem
-                                    Auftragnehmer die benötigten
-                                    Arbeitsbedingungen zur Verfügung.
-                                </p>
-                                <p>
-                                    b) Kommt der Auftraggeber seinen
-                                    Mitwirkungspflichten nicht oder nur
-                                    unzureichend nach und verzögert sich
-                                    infolgedessen die Erbringung von Leistungen
-                                    durch den Auftragnehmer, so ist dieser
-                                    dafür nicht verantwortlich.
-                                </p>
-                                <p>
-                                    c) Wird ein Gegenstand beim Auftraggeber
-                                    gepfändet oder beschlagnahmt, so hat der
-                                    Auftraggeber dies dem Auftragnehmer
-                                    unverzüglich schriftlich anzuzeigen.
-                                    Ebenfalls ist der Auftraggeber
-                                    verpflichtet, den Dritten vom Eigentum des
-                                    Auftragnehmers in Kenntnis zu setzen.
-                                </p>
-                                <p>
-                                    <strong>§ 6 Haftung</strong>
-                                </p>
-                                <p>
-                                    a) Der Auftragnehmer haftet uneingeschränkt
-                                    nach den gesetzlichen Bestimmungen für
-                                    Schäden an Leben, Körper und Gesundheit,
-                                    die auf einer fahrlässigen oder
-                                    vorsätzlichen Pflichtverletzung von dem
-                                    Auftragnehmer, seinen gesetzlichen
-                                    Vertretern oder seinen Erfüllungsgehilfen
-                                    beruhen, sowie für Schäden, die von der
-                                    Haftung nach dem Produkthaftungsgesetz
-                                    umfasst werden, sowie für Schäden, die auf
-                                    vorsätzlichen oder grob fahrlässigen
-                                    Vertragsverletzungen sowie Arglist des
-                                    Auftragnehmers, seiner gesetzlichen
-                                    Vertreter oder Erfüllungsgehilfen beruhen.
-                                    Soweit der Auftragnehmer bezüglich der Ware
-                                    oder Teile derselben eine Beschaffenheits-
-                                    und/oder Haltbarkeitsgarantie abgegeben
-                                    hat, haftet er auch im Rahmen dieser
-                                    Garantie. Für Schäden, die auf dem Fehlen
-                                    der garantierten Beschaffenheit oder
-                                    Haltbarkeit beruhen, aber nicht unmittelbar
-                                    an der Ware eintreten, haftet der
-                                    Auftragnehmer allerdings nur dann, wenn das
-                                    Risiko eines solchen Schadens ersichtlich
-                                    von der Beschaffenheits- und
-                                    Halbarkeitsgarantie erfasst ist.
-                                </p>
-                                <p>
-                                    b) Der Auftragnehmer haftet auch für
-                                    Schäden, die durch einfache Fahrlässigkeit
-                                    verursacht werden, soweit diese
-                                    Fahrlässigkeit die Verletzung solcher
-                                    Vertragspflichten betrifft, deren
-                                    Einhaltung für die Erreichung des
-                                    Vertragszweckes von besonderer Bedeutung
-                                    ist. Das Gleiche gilt, wenn dem
-                                    Auftraggeber Ansprüche auf Schadensersatz
-                                    statt der Leistung zustehen. Er haftet
-                                    jedoch nur, soweit die Schäden
-                                    typischerweise mit dem Vertrag verbunden
-                                    und vorhersehbar sind.
-                                </p>
-                                <p>
-                                    c) Eine weitergehende Haftung des
-                                    Auftragnehmers bei Verkauf einer Sache ist
-                                    ohne Rücksicht auf die Rechtsnatur des
-                                    geltend gemachten Anspruchs ausgeschlossen;
-                                    dies gilt insbesondere auch für deliktische
-                                    Ansprüche oder Ansprüche auf Ersatz
-                                    vergeblicher Aufwendungen statt der
-                                    Leistung. Soweit die Haftung des
-                                    Auftragnehmers ausgeschlossen oder
-                                    beschränkt ist, gilt dies auch für die
-                                    persönliche Haftung seiner Angestellten,
-                                    Arbeitnehmer, Mitarbeiter, Vertreter oder
-                                    Erfüllungsgehilfen.
-                                </p>
-                                <p>
-                                    <strong>§ 7 Form von Erklärungen</strong>
-                                </p>
-                                <p>
-                                    Rechtserhebliche Erklärungen und Anzeigen,
-                                    die der Auftraggeber gegenüber dem
-                                    Auftragnehmer oder einem Dritten abzugeben
-                                    hat, bedürfen der Schriftform.
-                                </p>
-                                <p>
-                                    <strong>
-                                        § 8 Besondere Regelungen für
-                                        Mietverträge
-                                    </strong>
-                                </p>
-                                <p>
-                                    a) Geltungsbereich
-                                </p>
-                                <p>
-                                    Bei dem Abschluss eines Mietvertrages
-                                    zwischen dem Auftraggeber und dem
-                                    Auftragnehmer über die entgeltliche
-                                    Überlassung einer Sache, insbesondere über
-                                    Schaum- oder Schneemaschinen,
-                                    Wasseranlagen, Geräte für Pyro-,
-                                    Multimedia-, Licht- und Tontechnik und
-                                    andere Geräte zur Eventgestaltung, sind die
-                                    folgenden Vorschriften ergänzend zu den
-                                    allgemeinen Bedingungen gültig.
-                                </p>
-                                <p>
-                                    b) Mietdauer
-                                </p>
-                                <p>
-                                    aa) Das Mietverhältnis beginnt und endet zu
-                                    den im Mietvertrag genannten Zeitpunkten.
-                                </p>
-                                <p>
-                                    bb) Bei der Vermietung von Gegenständen
-                                    wird dem Auftraggeber die Möglichkeit
-                                    eingeräumt, den Mietgegenstand vor der
-                                    Abholung bzw. Entgegennahme zu untersuchen
-                                    oder durch Dritte untersuchen zu lassen.
-                                    Der Auftraggeber hat erkennbare Mängel der
-                                    Mietsache unverzüglich nach der
-                                    durchgeführten Untersuchung dem
-                                    Auftragnehmer schriftlich anzuzeigen. Kommt
-                                    er dem nicht nach, kann er erkennbare
-                                    Mängel sodann nicht mehr rügen.
-                                </p>
-                                <p>
-                                    cc) Der Auftragnehmer ist verpflichtet, die
-                                    vom Auftraggeber bei der Übergabe
-                                    unverzüglich gerügten Mängel zu beseitigen
-                                    und berechtigt stattdessen dem Auftraggeber
-                                    einen gleichwertigen Mietgegenstand zur
-                                    Verfügung zu stellen.
-                                </p>
-                                <p>
-                                    c) Pflichten des Auftraggebers
-                                </p>
-                                <p>
-                                    aa) Bei der Vermietung eines Gegenstandes
-                                    ist der Auftraggeber verpflichtet den
-                                    Mietgegenstand pfleglich zu behandeln und
-                                    nur von eingewiesenem Personal bedienen zu
-                                    lassen. Die Laser- und Bedienungsanlage
-                                    muss unzugänglich für unbefugte Personen
-                                    aufgestellt und geschützt werden. Bei
-                                    eventuell auftretenden Mängeln hat der
-                                    Autraggeber dem Auftragnehmer die
-                                    unverzügliche Reparaturdurchführung durch
-                                    diesen selbst oder einen Dritten zu
-                                    ermöglichen. Der Auftraggeber ist nicht
-                                    berechtigt, Veränderungen am Mietgegenstand
-                                    vorzunehmen. Der Auftraggeber ist nicht
-                                    berechtigt, einem Dritten Rechte am
-                                    Mietgegenstand einzuräumen. Insbesondere
-                                    ist er nicht berechtigt, den Mietgegenstand
-                                    unterzuvermieten.
-                                </p>
-                                <p>
-                                    bb) Der Auftraggeber hat alle für die
-                                    Nutzung des Vertragsgegenstandes
-                                    maßgeblichen Vorschriften zu beachten. Ein
-                                    Laser muss nach den gültigen Richtlinien,
-                                    Mindestabständen und gesetzlichen
-                                    Vorschriften aufgestellt und betrieben
-                                    werden. Hierbei sind die DIN 60825 sowie
-                                    die DIN 56912 zu beachten. Der Laser muss
-                                    auf eine Mindesthöhe von 2,70 m montiert
-                                    werden. Der MZB-Wert im Publikum darf nicht
-                                    überschritten werden. Eine Lasershow muss
-                                    bei der Durchführung von einem zuständigen
-                                    Laserschutzbeauftragten überwacht werden.
-                                    Beim Betrieb einer Laseranlage ohne
-                                    TÜV-Prüfung werden die Beam- oder
-                                    Grafikshows nur Überkopf durchgeführt.
-                                    Sollten Beams im Publikumsbereich
-                                    durchgeführt werden, so geschieht dies
-                                    unter Einhaltung der maximalen MZB Werte.
-                                    Die Laser des Auftraggebers sind nicht
-                                    wasser- und feuchtigkeitsgschützt. Der
-                                    Auftraggeber hat dies zu beachten und bei
-                                    der Nutzung einen geeigneten Wetterschutz
-                                    sicher zu stellen.
-                                </p>
-                                <p>
-                                    cc) Der Auftraggeber hat eine Lasershow
-                                    ordnungsgemäß bei den zuständigen Behörden
-                                    anzumelden. Durch ausdrückliche
-                                    Vereinbarung zwischen den Parteien, kann
-                                    festgelegt werden, dass der Auftragnehmer
-                                    diese Anmeldung für den Auftraggeber
-                                    durchführt.
-                                </p>
-                                <p>
-                                    dd) Der Auftragnehmer weist ausdrücklich
-                                    darauf hin, dass eine TÜV-Prüfung von der
-                                    zuständigen Behörde verlangt werden kann.
-                                    In Sonderfällen kann der Auftragnehmer bei
-                                    baulichen Begebenheiten, wie niedriger
-                                    Bauweise, Scans im Publikum oder sonstigen
-                                    Begebenheiten eine TÜV-Prüfung verlangen.
-                                    Für den Fall, dass eine TÜV-Prüfung
-                                    notwendig ist, hat der Auftraggeber die
-                                    Kosten hierfür zu tragen.
-                                </p>
-                                <p>
-                                    ee) Während des Auf- und Abbaus und des
-                                    Betriebs der Laseranlage hat ein
-                                    Laserschutzbeauftragter anwesend zu sein.
-                                </p>
-                                <p>
-                                    d) Haftung des Auftraggebers
-                                </p>
-                                <p>
-                                    Der Auftraggeber haftet für alle von ihm
-                                    verschuldeten Schäden am vermieteten
-                                    Gegenstand, insbesondere wenn diese durch
-                                    Personal des Veranstalters oder Dritte
-                                    verursacht werden. Dies gilt insbesondere
-                                    auch, wenn Schäden an der Mietsache durch
-                                    unsachgemäßer Benutzung oder Aufstellung
-                                    des Auftraggebers eintreten.
-                                </p>
-                                <p>
-                                    e) Besichtigungsrecht und Untersuchung des
-                                    Mietgegenstandes
-                                </p>
-                                <p>
-                                    Der Auftragnehmer ist jederzeit berechtigt,
-                                    das Gerät zu besichtigen oder nach
-                                    vorheriger Abstimmung mit dem Auftraggeber
-                                    zu untersuchen oder durch einen
-                                    Beauftragten besichtigen und untersuchen zu
-                                    lassen. Der Mieter ist verpflichtet, den
-                                    Vermieter im Rahmen seiner Möglichkeiten zu
-                                    unterstützen.
-                                </p>
-                                <p>
-                                    f) Rückgabe der Mietsache
-                                </p>
-                                <p>
-                                    aa) Der Auftraggeber ist verpflichtet, den
-                                    Mietgegenstand nach Ablauf der Mietzeit am
-                                    vereinbarten Ort in demselben Zustand, wie
-                                    er ihn übernommen hat, mit Ausnahme der
-                                    normalen Abnutzung durch den Gebrauch zu
-                                    übergeben. Erfolgt die Rückgabe nicht in
-                                    ordnungsgemäßem Zustand, kann der Vermieter
-                                    die zur Herstellung eines ordnungsgemäßen
-                                    Zustandes erforderlichen Aufwendungen durch
-                                    eigenes Personal vornehmen lassen und die
-                                    Kosten dem Mieter in Rechnung stellen.
-                                </p>
-                                <p>
-                                    bb) Ist dem Auftraggeber die Rückgabe des
-                                    Mietgegenstandes aus von ihm zu
-                                    vertretenden Gründen bzw. aus technisch
-                                    zwingenden Gründen unmöglich, so ist er dem
-                                    Auftraggeber zu dem hieraus entstehenden
-                                    Schaden zum Ersatz verpflichtet.
-                                </p>
-                                <p>
-                                    <strong>
-                                        § 9 Besondere Regelungen für
-                                        Kaufverträge
-                                    </strong>
-                                </p>
-                                <p>
-                                    a) Geltungsbereich
-                                </p>
-                                <p>
-                                    Schließen der Auftraggeber und der
-                                    Auftragnehmer einen Kaufvertrag, das heißt
-                                    einen Vertrag über die entgeltliche
-                                    dauerhafte Überlassung einer Sache,
-                                    insbesondere von Wasserleinwänden,
-                                    Effektgeräten, Schaumluid oder Nebelfluid
-                                    ab, gelten die nachfolgenden Vorschriften
-                                    ergänzend zu den Vorschriften dieser
-                                    allgemeinen Geschäftsbedingungen für die
-                                    einzelnen Verträge.
-                                </p>
-                                <p>
-                                    b) Gefahrübergang/Versand
-                                </p>
-                                <p>
-                                    aa) Verladung und Versand erfolgen auf
-                                    Gefahr des Auftraggebers. Der Auftragnehmer
-                                    wird sich bemühen, hinsichtlich Versandart
-                                    und Versandweg Wünsche und Interessen des
-                                    Auftraggebers zu berücksichtigen. Dadurch
-                                    bedingte Mehrkosten gehen zu Lasten des
-                                    Auftraggebers. Der Auftragnehmer nimmt
-                                    Transport- und sonstige Verpackungen nicht
-                                    zurück. Der Auftraggeber hat für die
-                                    Entsorgung der Verpackung auf eigene Kosten
-                                    zu sorgen.
-                                </p>
-                                <p>
-                                    bb) Wird der Versand auf Wunsch oder
-                                    aufgrund Verschuldens des Auftraggebers
-                                    verzögert, so lagert der Auftragnehmer die
-                                    Waren auf Kosten und Gefahr des
-                                    Auftraggebers. In diesem Fall steht die
-                                    Anzeige der Versandbereitschaft dem Versand
-                                    gleich.
-                                </p>
-                                <p>
-                                    c) Liefer- und Leistungszeit
-                                </p>
-                                <p>
-                                    aa) Liefertermine und Fristen, die nicht
-                                    ausdrücklich als verbindlich vereinbart
-                                    worden sind, sind ausschließlich
-                                    unverbindliche Angaben. Die von dem
-                                    Auftragnehmer angegebene Lieferzeit beginnt
-                                    erst, wenn die technischen Fragen abgeklärt
-                                    sind. Ebenso hat der Auftraggeber alle ihm
-                                    obliegenden Verpflichtungen ordnungsgemäß
-                                    und rechtzeitig zu erfüllen. Liefertermine
-                                    stehen grundsätzlich unter dem Vorbehalt
-                                    richtiger und rechtzeitiger
-                                    Selbstbelieferung durch Lieferanten des
-                                    Auftragnehmers, es sei denn, der
-                                    Auftragnehmer hat die Nichtbelieferung
-                                    durch den Vorlieferanten zu vertreten.
-                                </p>
-                                <p>
-                                    bb) Liefertermine verlängern sich um den
-                                    Zeitraum, in dem der Auftragnehmer durch
-                                    Umstände, die er nicht zu vertreten hat,
-                                    daran gehindert ist, die Leistungen zu
-                                    erbringen und um eine angemessene
-                                    Anlaufzeit nach Ende der Behinderung.
-                                </p>
-                                <p>
-                                    cc) Der Auftragnehmer haftet nach den
-                                    gesetzlichen Bestimmungen, vorbehaltlich
-                                    der nachfolgenden Begrenzungen, wenn es
-                                    sich bei dem Vertrag um ein Fixgeschäft
-                                    handelt oder der Käufer in Folge des von
-                                    dem Verkäufer zu vertretenden
-                                    Lieferverzuges berechtigt ist, sich auf den
-                                    Fortfall seines Interesses an der
-                                    Vertragserfüllung zu berufen. Die Haftung
-                                    richtet sich unbeschränkt nach den
-                                    gesetzlichen Bestimmungen, wenn ein Schaden
-                                    an Leben, Körper und Gesundheit vorliegt.
-                                </p>
-                                <p>
-                                    dd) Ebenso haftet der Auftragnehmer dem
-                                    Auftraggeber bei Lieferverzug nach den
-                                    gesetzlichen Bestimmungen, beschränkt auf
-                                    eine von diesem zu vertretende vorsätzliche
-                                    oder grob fahrlässigen Verletzung des
-                                    Vertrages, wobei ein Verschulden der
-                                    Vertreter oder Erfüllungsgehilfen
-                                    zuzurechnen ist. Die Haftung ist jedoch auf
-                                    den vorhersehbaren typischerweise
-                                    eintretenden Schaden begrenzt, wenn der
-                                    Lieferverzug nicht auf einer von dem
-                                    Auftragnehmer zu vertretenen vorsätzlichen
-                                    oder grob fahrlässigen Vertragsverletzung
-                                    beruht, insbesondere wenn eine wesentliche
-                                    Vertrags- oder Kardinalspflicht verletzt
-                                    ist.
-                                </p>
-                                <p>
-                                    ee) Ansonsten kann der Auftraggeber im
-                                    Falle eines vom Auftragnehmer zu
-                                    vertretenden Lieferverzuges für jede
-                                    vollendete Woche des Verzuges höchstens
-                                    eine pauschalierte Entschädigung in Höhe
-                                    von 3 % des Lieferwertes, maximal jedoch
-                                    nicht mehr als 15 % des Lieferwertes
-                                    geltend machen.
-                                </p>
-                                <p>
-                                    ff) Eine weitergehende Haftung für einen
-                                    von dem Auftragnehmer zu vertretenden
-                                    Lieferverzug ist ausgeschlossen. Die
-                                    weitergehenden Ansprüche und Rechte des
-                                    Auftraggebers, die ihm neben dem
-                                    Schadensersatzanspruch wegen eines vom
-                                    Augtragnehmers zu vertretenden
-                                    Lieferverzugs zustehen, bleiben unberührt.
-                                </p>
-                                <p>
-                                    d) Eigentumsvorbehalt
-                                </p>
-                                <p>
-                                    aa) Der Auftragnehmer behält sich das
-                                    Eigentum an der Ware bis zum Eingang aller
-                                    Zahlungen aus dem Kaufvertrag vor.
-                                </p>
-                                <p>
-                                    bb) Verhält sich der Auftraggeber
-                                    vertragswidrig, insbesondere wenn er seiner
-                                    Zahlungsverpflichtung trotz einer Mahnung
-                                    des Auftragnehmers nicht nachkommt, kann
-                                    der Auftragnehmer nach einer vorherigen
-                                    angemessenen Fristsetzung vom Vertrag
-                                    zurücktreten und die Herausgabe der noch in
-                                    seinem Eigentum stehenden Ware verlangen.
-                                    In der Zurücknahme der Ware durch den
-                                    Verkäufer liegt ein Rücktritt vom Vertrag.
-                                    Die dabei anfallenden Transportkosten trägt
-                                    der Auftraggeber. Der Auftragnehmer ist
-                                    nach Rückerhalt der Ware zu deren
-                                    Verwertung befugt. Der Verwertungserlös auf
-                                    Verbindlichkeiten des Auftraggebers-
-                                    abzüglich angemessener Verwertungskosten-
-                                    anzurechnen.
-                                </p>
-                                <p>
-                                    e) Haftung für Mängel
-                                </p>
-                                <p>
-                                    aa) Soweit ein von dem Auftragnehmer zu
-                                    vertretender Mangel an der Ware vorliegt,
-                                    ist der Auftragnehmer zur Nacherfüllung
-                                    verpflichtet, es sei denn, dass der
-                                    Auftragnehmer aufgrund der gesetzlichen
-                                    Regelung zur Verweigerung der Nacherfüllung
-                                    berechtigt ist. Der Auftraggeber hat dem
-                                    Auftragnehmer eine angemessene Frist zur
-                                    Nacherfüllung zu gewähren. Der Auftraggeber
-                                    hat offensichtliche Mängel dem
-                                    Auftragnehmer gegenüber innerhalb einer
-                                    Frist von 2 Wochen nach Auftreten des
-                                    Mangels anzuzeigen. Erfolgt die Anzeige
-                                    nicht innerhalb der vorangegangenen Frist,
-                                    erlöschen die Gewährleistungsrechte. Das
-                                    gilt nicht, wenn der Auftragnehmer den
-                                    Mangel arglistig verschwiegen oder eine
-                                    Garantie für die Beschaffenheit der Sache
-                                    übernommen hat.
-                                </p>
-                                <p>
-                                    bb) Die Nacherfüllung kann nach Wahl des
-                                    Auftraggebers durch Beseitigung des Mangels
-                                    oder Lieferung neuer Ware erfolgen. Während
-                                    der Nacherfüllung sind die Herabsetzung des
-                                    Kaufpreises oder der Rücktritt vom Vertrag
-                                    durch den Auftraggeber ausgeschlossen. Die
-                                    Nachbesserung gilt mit dem zweiten
-                                    vergeblichen Versuch als fehlgeschlagen.
-                                    Ist die Nacherfüllung fehlgeschlagen, kann
-                                    der Auftraggeber nach seiner Wahl
-                                    Herabsetzung des Kaufpreises verlangen oder
-                                    den Rücktritt vom Vertrag erklären.
-                                </p>
-                                <p>
-                                    cc) Schadensersatzansprüche zu den
-                                    nachfolgenden Bedingungen wegen eines
-                                    Mangels bei Verkauf einer Sache kann der
-                                    Auftraggeber erst geltend machen, wenn die
-                                    Nacherfüllung fehlgeschlagen ist. Das Recht
-                                    des Auftraggebers zur Geltendmachung von
-                                    weitergehenden Schadensersatzansprüchen zu
-                                    den nachfolgenden Bedingungen bleibt davon
-                                    unberührt.
-                                </p>
-                                <p>
-                                    <strong>
-                                        § 12 Zusätzliche Regelungen für
-                                        Dienstleistungen
-                                    </strong>
-                                </p>
-                                <p>
-                                    a) Geltungsbereich
-                                </p>
-                                <p>
-                                    aa) Dienstleistungen dienen der Beratung
-                                    und Unterstützung des Auftraggebers. Hierzu
-                                    zählen insbesondere Dienstleistungen, die
-                                    im Rahmen einer Eventgestaltung anfallen.
-                                    Erbrachte Dienstleistungen werden auf
-                                    Aufwands- und Materialbasis unter
-                                    Zugrundelegung der im Angebot ausgewiesenen
-                                    Preise, vergütet.
-                                </p>
-                                <p>
-                                    bb) Der Auftragnehmer hat die geschuldeten
-                                    Tätigkeiten durch qualifizierte Mitarbeiter
-                                    zu erbringen. Die von dem Auftraggeber
-                                    eingesetzten Mitarbeiter unterliegen keinem
-                                    Weisungsrecht des Auftraggebers, dieses
-                                    wird vielmehr ausschließlich von dem
-                                    Auftragnehmer ausgeübt.
-                                </p>
-                                <p>
-                                    b) Vertragsdauer
-                                </p>
-                                <p>
-                                    aa) Die Vertragdauer ergibt sich aus dem
-                                    zwischen den Parteien geschlossenen
-                                    Verträgen.
-                                </p>
-                                <p>
-                                    bb) Eine Kündigung während der
-                                    Vertragsdauer eines befristeten Vertrages
-                                    ist nur aus wichtigem Grund möglich.
-                                </p>
-                                <p>
-                                    c) Pflichten des Auftragnehmers
-                                </p>
-                                <p>
-                                    Wird ein Laserschutzbeauftragter dem
-                                    Auftraggeber zur Verfügung gestellt, hat
-                                    dieser nur beratende Funktion. Für die
-                                    Ausführung von dessen Vorschlägen hat der
-                                    Auftraggeber zu sorgen und haftet allein
-                                    für die Nichtumsetzung und daraus
-                                    resultierende Schäden.
-                                </p>
-                                <p>
-                                    <strong>§ 13 Geheimhaltung</strong>
-                                </p>
-                                <p>
-                                    a) Die Vertragspartner verpflichten sich
-                                    zur vertraulichen Behandlung aller als
-                                    vertraulich bezeichneten oder sich aus den
-                                    Umständen als vertraulich zu behandelnd
-                                    ergebenden Informationen und Unterlagen des
-                                    jeweils anderen Vertragspartners, sowie
-                                    deren Betriebs- und Geschäftsgeheimnisse.
-                                </p>
-                                <p>
-                                    b) Nicht von der Geheimhaltung umfasst sind
-                                    Informationen und Unterlagen, die im
-                                    Zeitpunkt der Offenlegung allgemein bekannt
-                                    und zugänglich oder dem empfangenden
-                                    Vertragspartner zum Zeitpunkt der
-                                    Offenlegung bereits bekannt waren oder ihm
-                                    von Dritten berechtigterweise zugänglich
-                                    gemacht worden sind.
-                                </p>
-                                <p>
-                                    <strong>§ 14 Sonstiges </strong>
-                                </p>
-                                <p>
-                                    a) Diese Bestimmungen bleiben auch bei
-                                    Unwirksamkeit einzelner oder mehrerer
-                                    Bestimmungen in ihren übrigen Teilen
-                                    verbindlich. Unwirksame Bestimmungen sind
-                                    durch Regelungen zu ersetzen, die dem Sinn
-                                    und Zweck der unwirksamen Regelung in
-                                    rechtswirksamer Weise am nächsten kommen.
-                                </p>
-                                <p>
-                                    b) Die Beziehungen zwischen den
-                                    Vertragsparteien regeln sich ausschließlich
-                                    nach dem in der Bundesrepublik Deutschland
-                                    geltendem Recht. Die Anwendung des
-einheitlichen Gesetzes über                                    <a name="_GoBack"></a>den internationalen
-                                    Kauf beweglicher Sachen sowie des Gesetzes
-                                    über den Abschluss von internationalen
-                                    Kaufverträgen über bewegliche Sachen ist
-                                    ausgeschlossen.
-                                </p>
-                                <p>
-                                    c) Ausschließlicher Gerichtsstand für
-                                    Lieferungen und Zahlungen sowie sämtliche
-                                    sich zwischen dem Auftragnehmer und dem
-                                    Auftraggeber ergebenden Streitigkeiten aus
-                                    den zwischen den Parteien abgeschlossenen
-                                    Verträgen ist der Firmensitz des
-                                    Auftragnehmers, soweit der Auftraggeber
-                                    Kaufmann, juristische Person des
-                                    öffentlichen Rechts oder ein
-                                    öffentlich-rechtliches Sondervermögen ist.
-                                </p>
-
-                        <h1>
+    <p>
+    <strong>Impressum</strong>
+</p>
+<p>
+    Angaben gemäß §5 TMG
+</p>
+<p>
+    Maurice Baumgart
+    <br/>
+    Schmiedestraße 3
+    <br/>
+    38531 Rötgesbüttel
+</p>
+<p>
+    <strong>Kontakt</strong>
+    <br/>
+    E-Mail: <a href="mailto:IGShuttle@web.de">IGShuttle@web.de</a>
+</p>
+<p>
+    <strong>Disclaimer – rechtliche Hinweise</strong>
+</p>
+<p>
+    § 1 Warnhinweis zu Inhalten
+    <br/>
+    Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit
+    größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt
+    jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten
+    kostenlosen und frei zugänglichen journalistischen Ratgeber und
+    Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des
+    jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein
+    durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt
+    keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande,
+    insoweit fehlt es am Rechtsbindungswillen des Anbieters.
+    <br/>
+    <br/>
+    § 2 Externe Links
+    <br/>
+    Diese Website enthält Verknüpfungen zu Websites Dritter ("externe Links").
+    Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der
+    Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden
+    Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem
+    Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat
+    keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die
+    Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet
+    nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden
+    Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für
+    den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei
+    Kenntnis von Rechtsverstößen werden jedoch derartige externe Links
+    unverzüglich gelöscht.
+    <br/>
+    <br/>
+    § 3 Urheber- und Leistungsschutzrechte
+    <br/>
+    Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen
+    Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und
+    Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen
+    schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies
+    gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung,
+    Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken
+    oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter
+    sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder
+    Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und
+    strafbar. Lediglich die Herstellung von Kopien und Downloads für den
+    persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.
+    <br/>
+    <br/>
+    Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher
+    Erlaubnis zulässig.
+    <br/>
+    <br/>
+    § 4 Besondere Nutzungsbedingungen
+    <br/>
+    Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den
+    vorgenannten Paragraphen abweichen, wird an entsprechender Stelle
+    ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen
+    Einzelfall die besonderen Nutzungsbedingungen.
+</p>
+<p>
+    <strong>Allgemeine Geschäftsbedingungen</strong>
+</p>
+<p>
+    <strong>§ 1 Geltungsbereich</strong>
+</p>
+<p>
+    a) Die nachfolgenden Bedingungen des Auftragnehmers gelten für alle
+    zwischen dem Auftragnehmer und dem Auftraggeber abgeschlossenen Verträge,
+    insbesondere über die Vermietung von Geräten, sowie den Verkauf und die
+    Lieferung von Waren und für Dienst- und Werkleistungen. Die besonderen
+    Regelungen dieser Bedingungen für bestimmte Vertragstypen finden bei dem
+    Abschluss eines entsprechenden Vertrages zwischen dem Auftraggeber und dem
+    Auftragnehmer zusätzlich zu den allgemeinen Regelungen Anwendung.
+</p>
+<p>
+    b) Mit der Erteilung des Auftrags erklärt sich der Auftraggeber mit diesen
+    Bedingungen einverstanden.
+</p>
+<p>
+    c) Entgegenstehende oder von diesen AGB abweichende Bedingungen des
+    Auftraggebers erkennt der Auftragnehmer nicht an, es sei denn, er hätte
+    ausdrücklich schriftlich ihrer Geltung zugestimmt.
+</p>
+<p>
+    d) Diese Bedingungen gelten sowohl gegenüber Verbrauchern als auch
+    gegenüber Unternehmern, es sei denn, in der jeweiligen Klausel wird eine
+    Differenzierung vorgenommen.
+</p>
+<p>
+    <strong>§ 2 Angebot und Vertragsschluss</strong>
+</p>
+<p>
+    a) Ein Vertrag kommt dadurch zustande, dass der Auftraggeber die
+    Auftragsbestätigung unterzeichnet. Lediglich schriftliche Angebote des
+    Auftragnehmers sind bindend, telefonische oder Angebote per email sind
+    nicht bindend.
+</p>
+<p>
+    b) Abbildungen, Zeichnungen, sowie andere Unterlagen, die zu den
+    unverbindlichen Angeboten des Auftragnehmers gehören bleiben im Eigentum
+    des Auftragnehmers und sind nur annährend maßgebend, soweit sie nicht von
+    ihm ausdrücklich als verbindlich bezeichnet worden sind.
+</p>
+<p>
+    <strong>§ 3 Zahlungsbedingungen</strong>
+</p>
+<p>
+    a) Der zu zahlende Betrag ist innerhalb von netto 7 Tagen nach Auftrags-
+    oder Rechnungsabschluss zur Zahlung fällig, soweit sich aus der
+    Auftragsbestätigung kein anderes Zahlungsziel ergibt. Die
+    Zahlungsverpflichtung ist durch Überweisung auf das angegebene Konto des
+    Auftragnehmers oder durch Barzahlung zu erfüllen.
+</p>
+<p>
+    b) Der Auftraggeber ist zur Aufrechnung, auch wenn Mängelrügen oder
+    Gegenansprüche geltend gemacht werden nur berechtigt, wenn die
+    Gegenansprüche rechtskräftig festgestellt, von dem Auftragnehmer anerkannt
+    wurden oder unstreitig sind. Zur Ausübung eines Zurückbehaltungsrechts ist
+    der Auftraggeber nur befugt, wenn sein Gegenanspruch auf dem gleichen
+    Vertragsverhältnis beruht.
+</p>
+<p>
+    <strong>§ 4 Leistungsumfang des Auftragnehmers</strong>
+</p>
+<p>
+    a) Der Umfang der vom Auftragnehmer in den einzelnen geschuldeten
+    Leistungen <a name="_GoBack"></a>ergibt sich aus dem jeweiligen Angebot,
+    der Auftragsbestätigung und diesen Vertragsbedingungen.
+</p>
+<p>
+    <strong>§ 5 Pflichten des Auftraggebers</strong>
+</p>
+<p>
+    a) Der Auftraggeber erbringt als wesentliche Vertragspflicht vereinbarte
+    und sonstige Mitwirkungsleistungen, sowie Bereitstellungen in dem
+    erforderlichen Umfang bzw. der benötigten Qualität und zu den vereinbarten
+    Terminen und stellt dem Auftragnehmer die benötigten Arbeitsbedingungen zur
+    Verfügung.
+</p>
+<p>
+    b) Kommt der Auftraggeber seinen Mitwirkungspflichten nicht oder nur
+    unzureichend nach und verzögert sich infolgedessen die Erbringung von
+    Leistungen durch den Auftragnehmer, so ist dieser dafür nicht
+    verantwortlich.
+</p>
+<p>
+    c) Wird ein Gegenstand beim Auftraggeber gepfändet oder beschlagnahmt, so
+    hat der Auftraggeber dies dem Auftragnehmer unverzüglich schriftlich
+    anzuzeigen. Ebenfalls ist der Auftraggeber verpflichtet, den Dritten vom
+    Eigentum des Auftragnehmers in Kenntnis zu setzen.
+</p>
+<p>
+    <strong>§ 6 Haftung</strong>
+</p>
+<p>
+    a) Der Auftragnehmer haftet uneingeschränkt nach den gesetzlichen
+    Bestimmungen für Schäden an Leben, Körper und Gesundheit, die auf einer
+    fahrlässigen oder vorsätzlichen Pflichtverletzung von dem Auftragnehmer,
+    seinen gesetzlichen Vertretern oder seinen Erfüllungsgehilfen beruhen,
+    sowie für Schäden, die von der Haftung nach dem Produkthaftungsgesetz
+    umfasst werden, sowie für Schäden, die auf vorsätzlichen oder grob
+    fahrlässigen Vertragsverletzungen sowie Arglist des Auftragnehmers, seiner
+    gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen. Soweit der
+    Auftragnehmer bezüglich der Ware oder Teile derselben eine Beschaffenheits-
+    und/oder Haltbarkeitsgarantie abgegeben hat, haftet er auch im Rahmen
+    dieser Garantie. Für Schäden, die auf dem Fehlen der garantierten
+    Beschaffenheit oder Haltbarkeit beruhen, aber nicht unmittelbar an der Ware
+    eintreten, haftet der Auftragnehmer allerdings nur dann, wenn das Risiko
+    eines solchen Schadens ersichtlich von der Beschaffenheits- und
+    Halbarkeitsgarantie erfasst ist.
+</p>
+<p>
+    b) Der Auftragnehmer haftet auch für Schäden, die durch einfache
+    Fahrlässigkeit verursacht werden, soweit diese Fahrlässigkeit die
+    Verletzung solcher Vertragspflichten betrifft, deren Einhaltung für die
+    Erreichung des Vertragszweckes von besonderer Bedeutung ist. Das Gleiche
+    gilt, wenn dem Auftraggeber Ansprüche auf Schadensersatz statt der Leistung
+    zustehen. Er haftet jedoch nur, soweit die Schäden typischerweise mit dem
+    Vertrag verbunden und vorhersehbar sind.
+</p>
+<p>
+    c) Eine weitergehende Haftung des Auftragnehmers bei Verkauf einer Sache
+    ist ohne Rücksicht auf die Rechtsnatur des geltend gemachten Anspruchs
+    ausgeschlossen; dies gilt insbesondere auch für deliktische Ansprüche oder
+    Ansprüche auf Ersatz vergeblicher Aufwendungen statt der Leistung. Soweit
+    die Haftung des Auftragnehmers ausgeschlossen oder beschränkt ist, gilt
+    dies auch für die persönliche Haftung seiner Angestellten, Arbeitnehmer,
+    Mitarbeiter, Vertreter oder Erfüllungsgehilfen.
+</p>
+<p>
+    <strong>§ 7 Form von Erklärungen</strong>
+</p>
+<p>
+    Rechtserhebliche Erklärungen und Anzeigen, die der Auftraggeber gegenüber
+    dem Auftragnehmer oder einem Dritten abzugeben hat, bedürfen der
+    Schriftform.
+</p>
+<p>
+    <strong>§ 8 Geheimhaltung</strong>
+</p>
+<p>
+    a) Die Vertragspartner verpflichten sich zur vertraulichen Behandlung aller
+    als vertraulich bezeichneten oder sich aus den Umständen als vertraulich zu
+    behandelnd ergebenden Informationen und Unterlagen des jeweils anderen
+    Vertragspartners, sowie deren Betriebs- und Geschäftsgeheimnisse.
+</p>
+<p>
+    b) Nicht von der Geheimhaltung umfasst sind Informationen und Unterlagen,
+    die im Zeitpunkt der Offenlegung allgemein bekannt und zugänglich oder dem
+    empfangenden Vertragspartner zum Zeitpunkt der Offenlegung bereits bekannt
+    waren oder ihm von Dritten berechtigterweise zugänglich gemacht worden
+    sind.
+</p>
+<p>
+    <strong>§ 9 Sonstiges </strong>
+</p>
+<p>
+    a) Diese Bestimmungen bleiben auch bei Unwirksamkeit einzelner oder
+    mehrerer Bestimmungen in ihren übrigen Teilen verbindlich. Unwirksame
+    Bestimmungen sind durch Regelungen zu ersetzen, die dem Sinn und Zweck der
+    unwirksamen Regelung in rechtswirksamer Weise am nächsten Kommen.
+</p>
+<p>
+    b) Die Beziehungen zwischen den Vertragsparteien regeln sich ausschließlich
+    nach dem in der Bundesrepublik Deutschland geltendem Recht. Die Anwendung
+    des einheitlichen Gesetzes über den internationalen Kauf beweglicher Sachen
+    sowie des Gesetzes über den Abschluss von internationalen Kaufverträgen
+    über bewegliche Sachen ist ausgeschlossen.
+</p>
+<p>
+    c) Ausschließlicher Gerichtsstand für Lieferungen und Zahlungen sowie
+    sämtliche sich zwischen dem Auftragnehmer und dem Auftraggeber ergebenden
+    Streitigkeiten aus den zwischen den Parteien abgeschlossenen Verträgen ist
+    der Firmensitz des Auftragnehmers, soweit der Auftraggeber Kaufmann,
+    juristische Person des öffentlichen Rechts oder ein öffentlich-rechtliches
+    Sondervermögen ist.
+</p>
+<table cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td valign="top">
+                <br/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h1>
     Datenschutzerklärung
 </h1>
 <h2>
@@ -765,6 +294,61 @@ einheitlichen Gesetzes über                                    <a name="_GoBack
     Stand: 27. August 2019
 </p>
 <h2>
+    Inhaltsübersicht
+</h2>
+<ul type="disc">
+    <li>
+        <a href="#m14">Einleitung</a>
+    </li>
+    <li>
+        <a href="#m3">Verantwortlicher</a>
+    </li>
+    <li>
+        <a href="#mOverview">Übersicht der Verarbeitungen</a>
+    </li>
+    <li>
+        <a href="#m13">Maßgebliche Rechtsgrundlagen</a>
+    </li>
+    <li>
+        <a href="#m27">Sicherheitsmaßnahmen</a>
+    </li>
+    <li>
+        <a href="#m25">
+            Übermittlung und Offenbarung von personenbezogenen Daten
+        </a>
+    </li>
+    <li>
+        <a href="#m24">Datenverarbeitung in Drittländern</a>
+    </li>
+    <li>
+        <a href="#m134">Einsatz von Cookies</a>
+    </li>
+    <li>
+        <a href="#m182">Kontaktaufnahme</a>
+    </li>
+    <li>
+        <a href="#m391">Kommunikation via Messenger</a>
+    </li>
+    <li>
+        <a href="#m225">Bereitstellung des Onlineangebotes und Webhosting</a>
+    </li>
+    <li>
+        <a href="#m328">Plugins und eingebettete Funktionen sowie Inhalte</a>
+    </li>
+    <li>
+        <a href="#m12">Löschung von Daten</a>
+    </li>
+    <li>
+        <a href="#m15">Änderung und Aktualisierung der Datenschutzerklärung</a>
+    </li>
+    <li>
+        <a href="#m10">Rechte der betroffenen Personen</a>
+    </li>
+    <li>
+        <a href="#m42">Begriffsdefinitionen</a>
+    </li>
+</ul>
+<h2>
     Verantwortlicher
 </h2>
 <p>
@@ -776,11 +360,11 @@ einheitlichen Gesetzes über                                    <a name="_GoBack
 </p>
 <p>
     <strong>Vertretungsberechtigte Personen</strong>
-    : Tim Kaufmann
+    : Tobias Kurt Georg Winkler
 </p>
 <p>
     <strong>E-Mail-Adresse</strong>
-    : mussnochgemachtwerden.de
+    : IGShuttle@web.de
 </p>
 <h2>
     Übersicht der Verarbeitungen
@@ -798,13 +382,6 @@ einheitlichen Gesetzes über                                    <a name="_GoBack
         Bestandsdaten (z.B. Namen, Adressen).
     </li>
 </ul>
-<p>
-    · Bewerberdaten (z.B. Angaben zur Person, Post- und Kontaktadressen, die
-    zur Bewerbung gehörenden Unterlagen und die darin enthaltenen
-    Informationen, wie z.B. Anschreiben, Lebenslauf, Zeugnisse sowie weitere im
-    Hinblick auf eine konkrete Stelle oder freiwillig von Bewerbern mitgeteilte
-    Informationen zu deren Person oder Qualifikation).
-</p>
 <p>
     · Inhaltsdaten (z.B. Texteingaben, Fotografien, Videos).
 </p>
@@ -824,9 +401,6 @@ einheitlichen Gesetzes über                                    <a name="_GoBack
     Kategorien betroffener Personen
 </h3>
 <ul>
-    <li>
-        Bewerber.
-    </li>
     <li>
         Kommunikationspartner.
     </li>
@@ -884,7 +458,31 @@ einheitlichen Gesetzes über                                    <a name="_GoBack
         Interessen oder Grundrechte und Grundfreiheiten der betroffenen Person,
         die den Schutz personenbezogener Daten erfordern, überwiegen.
     </li>
-    
+    <li>
+        <strong>
+            Art. 9 Abs. 1 S. 1 lit. b DSGVO (Bewerbungsverfahren als
+            vorvertragliches bzw. vertragliches Verhältnis) (Soweit im Rahmen
+            des Bewerbungsverfahrens besondere Kategorien von personenbezogenen
+            Daten im Sinne des Art. 9 Abs. 1 DSGVO (z.B. Gesundheitsdaten, wie
+            Schwerbehinderteneigenschaft oder ethnische Herkunft) bei Bewerbern
+            angefragt werden, damit der Verantwortliche oder die betroffene
+            Person die ihm bzw. ihr aus dem Arbeitsrecht und dem Recht der
+            sozialen Sicherheit und des Sozialschutzes erwachsenden Rechte
+            ausüben und seinen bzw. ihren diesbezüglichen Pflichten nachkommen
+            kann, erfolgt deren Verarbeitung nach Art. 9 Abs. 2 lit. b. DSGVO,
+            im Fall des Schutzes lebenswichtiger Interessen der Bewerber oder
+            anderer Personen gem. Art. 9 Abs. 2 lit. c. DSGVO oder für Zwecke
+            der Gesundheitsvorsorge oder der Arbeitsmedizin, für die
+            Beurteilung der Arbeitsfähigkeit des Beschäftigten, für die
+            medizinische Diagnostik, die Versorgung oder Behandlung im
+            Gesundheits- oder Sozialbereich oder für die Verwaltung von
+            Systemen und Diensten im Gesundheits- oder Sozialbereich gem. Art.
+            9 Abs. 2 lit. h. DSGVO. Im Fall einer auf freiwilliger Einwilligung
+            beruhenden Mitteilung von besonderen Kategorien von Daten, erfolgt
+            deren Verarbeitung auf Grundlage von Art. 9 Abs. 2 lit. a. DSGVO.)
+        </strong>
+        - .
+    </li>
 </ul>
 <p>
     <strong>Nationale Datenschutzregelungen in Deutschland</strong>
@@ -1452,6 +1050,7 @@ einheitlichen Gesetzes über                                    <a name="_GoBack
         Speichern, das Übermitteln oder das Löschen.
     </li>
 </ul>
+
     </div>
     </form>
 </body>

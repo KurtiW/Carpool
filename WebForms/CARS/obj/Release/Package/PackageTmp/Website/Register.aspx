@@ -13,6 +13,9 @@
             <asp:Panel ID="REGISTER_PANEL" runat="server" >
                 <div class="left_container">
                     <img class="leftImage" src="../image/logo.png"/>
+                    <asp:Panel ID="ERROR_PANEL" runat="server" Visible="False">
+            <asp:Label ID="ERROR_TEXT" runat="server" Text="ERROR"></asp:Label>
+        </asp:Panel>
                 </div>
                 <div class="right_container">
                     <div class="inner_container">
@@ -49,9 +52,7 @@
                 </div>
             </asp:Panel>
         </div>                            
-        <asp:Panel ID="ERROR_PANEL" runat="server" Visible="False">
-            <asp:Label ID="ERROR_TEXT" runat="server" Text="ERROR"></asp:Label>
-        </asp:Panel>
+        
     </form>
 </body>
 </html>

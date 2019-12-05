@@ -76,7 +76,7 @@
 
                     </asp:Panel>
                     </div>
-                                <asp:Image ID="AVATAR" runat="server" ImageUrl="~/image/person-placeholder.jpg" style="float:left; width:100%;clear:both;"/>
+                                <!--<asp:Image ID="AVATAR" runat="server" ImageUrl="~/image/person-placeholder.jpg" style="float:left; width:100%;clear:both;"/>-->
 
                     <asp:Panel ID="USER_LABEL_PANEL" runat="server">
 
@@ -84,7 +84,7 @@
 
                     </asp:Panel>
 
-                    <asp:Panel ID="FORM_PANEL" runat="server">
+                    <!--<asp:Panel ID="FORM_PANEL" runat="server">
 
 
                         <form id="FORM_UPLAODPROFILEPIC" action="http://carpool.bplaced.net/Carpool/uploadImages.php" method="post" enctype="multipart/form-data">
@@ -93,7 +93,7 @@
                           </label>  
                           <button>Bestätigen</button>
                         </form>
-                    </asp:Panel>
+                    </asp:Panel>--->
 
                 
         

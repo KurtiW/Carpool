@@ -89,3 +89,19 @@
         background-image:url("image/star-24px.svg");
 
 }
+
+#MAIN_PANEL 
+{
+    display:flex;
+}
+
+#User_MAIN 
+{
+    width:50%;
+    height:calc(100vh - 80px);
+}
+
+#Rating_Panel 
+{
+    width:50%;
+}

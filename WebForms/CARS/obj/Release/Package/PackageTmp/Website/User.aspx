@@ -48,33 +48,61 @@
 
                 </header>--->
 
-        </div>
+        </div> 
+            <div id="MAIN_PANEL">
+
             <div id="User_MAIN">
-                <asp:Label ID="Username_Text" runat="server" Text="Username"></asp:Label>
 
-                <asp:Panel ID="RATE1" runat="server" CssClass="RATING_STAR">
-                    <asp:Panel ID="RATE1_Full" runat="server" CssClass="fullStar" />
-                </asp:Panel>
-                <asp:Panel ID="RATE2" runat="server" CssClass="RATING_STAR">
-                    <asp:Panel ID="RATE2_Full" runat="server" CssClass="fullStar"/>
+                <div style="">
 
-                </asp:Panel>
-                <asp:Panel ID="RATE3" runat="server" CssClass="RATING_STAR">
-                    <asp:Panel ID="RATE3_Full" runat="server" CssClass="fullStar"/>
+                <div style="display:flex; justify-content:center; width:100%; align-content:center;">
+                    <asp:Panel ID="RATE1" runat="server" CssClass="RATING_STAR">
+                        <asp:Panel ID="RATE1_Full" runat="server" CssClass="fullStar" />
+                    </asp:Panel>
+                    <asp:Panel ID="RATE2" runat="server" CssClass="RATING_STAR">
+                        <asp:Panel ID="RATE2_Full" runat="server" CssClass="fullStar"/>
 
-                </asp:Panel>
-                <asp:Panel ID="RATE4" runat="server" CssClass="RATING_STAR">
-                    <asp:Panel ID="RATE4_Full" runat="server" CssClass="fullStar"/>
+                    </asp:Panel>
+                    <asp:Panel ID="RATE3" runat="server" CssClass="RATING_STAR">
+                        <asp:Panel ID="RATE3_Full" runat="server" CssClass="fullStar"/>
 
-                </asp:Panel>
-                <asp:Panel ID="RATE5" runat="server" CssClass="RATING_STAR">
-                    <asp:Panel ID="RATE5_Full" runat="server" CssClass="fullStar"/>
+                    </asp:Panel>
+                    <asp:Panel ID="RATE4" runat="server" CssClass="RATING_STAR">
+                        <asp:Panel ID="RATE4_Full" runat="server" CssClass="fullStar"/>
 
-                </asp:Panel>
-            </div>
-        <asp:Panel ID="Rating_Panel" runat="server">
+                    </asp:Panel>
+                    <asp:Panel ID="RATE5" runat="server" CssClass="RATING_STAR">
+                        <asp:Panel ID="RATE5_Full" runat="server" CssClass="fullStar"/>
+
+                    </asp:Panel>
+                    </div>
+                                <!--<asp:Image ID="AVATAR" runat="server" ImageUrl="~/image/person-placeholder.jpg" style="float:left; width:100%;clear:both;"/>-->
+
+                    <asp:Panel ID="USER_LABEL_PANEL" runat="server">
+
+                        <asp:Label ID="Username_Text" runat="server" Text="Username" style="width:100%; float:left;clear:both; text-align:center;"></asp:Label>
+
+                    </asp:Panel>
+
+                    <!--<asp:Panel ID="FORM_PANEL" runat="server">
+
+
+                        <form id="FORM_UPLAODPROFILEPIC" action="http://carpool.bplaced.net/Carpool/uploadImages.php" method="post" enctype="multipart/form-data">
+                          <label>Wählen Sie Bild aus.
+                            <input name="datei" type="file"/> 
+                          </label>  
+                          <button>Bestätigen</button>
+                        </form>
+                    </asp:Panel>--->
+
+                
+        
+        
+            </div>  </div>     
+                <asp:Panel ID="Rating_Panel" runat="server">
             
-        </asp:Panel>
+                </asp:Panel>
+        </div> 
 
     </form>
 </body>

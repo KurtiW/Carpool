@@ -58,15 +58,6 @@ namespace CARS.Website {
         protected global::System.Web.UI.WebControls.Label Username_Lable;
         
         /// <summary>
-        /// Username_Text control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Username_Text;
-        
-        /// <summary>
         /// RATE1 control.
         /// </summary>
         /// <remarks>
@@ -155,6 +146,42 @@ namespace CARS.Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel RATE5_Full;
+        
+        /// <summary>
+        /// AVATAR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image AVATAR;
+        
+        /// <summary>
+        /// USER_LABEL_PANEL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel USER_LABEL_PANEL;
+        
+        /// <summary>
+        /// Username_Text control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Username_Text;
+        
+        /// <summary>
+        /// FORM_PANEL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel FORM_PANEL;
         
         /// <summary>
         /// Rating_Panel control.

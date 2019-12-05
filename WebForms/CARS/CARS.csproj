@@ -158,6 +158,7 @@
     <Content Include="image\outline_star_black_18dp.png" />
     <Content Include="image\outline_star_border_black_18dp.png" />
     <Content Include="image\outline_star_white_18dp.png" />
+    <Content Include="image\person-placeholder.jpg" />
     <Content Include="image\star-24px.svg" />
     <Content Include="image\star_border-24px.svg" />
     <Content Include="login.css" />

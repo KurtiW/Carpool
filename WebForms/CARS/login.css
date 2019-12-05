@@ -48,6 +48,17 @@ h2
     filter:invert(1);
 }
 
+#ERROR_PANEL 
+{
+    margin-top: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color:red;
+    text-align:center;
+}
+
 .right_container {
      float:right;
     width:50%;
@@ -169,3 +180,4 @@ a:active
 {
     color:gray;
 }
+

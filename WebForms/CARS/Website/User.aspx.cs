@@ -29,10 +29,25 @@ namespace CARS.Website
                 CHAT_MARKER.Visible = false;
             }
 
+            if (HttpContext.Current.Session["view_user"].ToString() != "")
+            {
+                FORM_PANEL.Visible = false;
+            }
+            else
+            {
+                FORM_PANEL.Visible = true;
+
+            }
+
             string text = CarsUtility.PullWebRequest(string.Format("viewUser.php?id={0}", (HttpContext.Current.Session["view_user"].ToString() == "") ? HttpContext.Current.Session["user_id"].ToString() : HttpContext.Current.Session["view_user"].ToString()));
 
             if (text == "NO DATA AVAILABLE")
             {
+            //http://carpool.bplaced.net/Carpool/uploadImages.php
+
+                
+
+
                 Username_Text.Text = "Noch keine Rezensionen vorhanden";
 
                 Panel[] rateButtons_ = new Panel[]

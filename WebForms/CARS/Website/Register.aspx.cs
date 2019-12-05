@@ -29,14 +29,14 @@ namespace CARS
             if (REGISTER_PASSWORT_INPUT.Text.Length < 6)
             {
                 ERROR_PANEL.Visible = true;
-                ERROR_TEXT.Text = "Passwort ist zu kurz.";
+                ERROR_TEXT.Text = "Passwort ist zu kurz!";
                 return;
             }
 
             if (REGISTER_PASSWORT_INPUT.Text != REGISTER_PASSWORDBESTÄTIGEN_INPUT.Text)
             {
                 ERROR_PANEL.Visible = true;
-                ERROR_TEXT.Text = "Passwörter sind nicht identisch.";
+                ERROR_TEXT.Text = "Passwörter sind nicht identisch!";
                 return;
             }
 
@@ -45,7 +45,7 @@ namespace CARS
             if (REGISTER_AGB_GELESEN_CHECKBOX.Checked == false)
             {
                 ERROR_PANEL.Visible = true;
-                ERROR_TEXT.Text = "Du musst den AGB zustimmen.";
+                ERROR_TEXT.Text = "Sie müssen den AGB zustimmen!";
                 return;
             }
 

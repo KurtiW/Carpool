@@ -60,7 +60,7 @@ namespace CARS
             if (text == "query error")
             {
                 ERROR_PANEL.Visible = true;
-                ERROR_TEXT.Text = "Logindaten sind falsch";
+                ERROR_TEXT.Text = "Logindaten sind falsch!";
                 return;
             }
             HttpContext.Current.Session["user_id"] = int.Parse(text.Split('|')[0]);

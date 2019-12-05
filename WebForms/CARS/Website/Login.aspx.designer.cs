@@ -31,6 +31,24 @@ namespace CARS {
         protected global::System.Web.UI.WebControls.Panel LOGIN_PANEL;
         
         /// <summary>
+        /// ERROR_PANEL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel ERROR_PANEL;
+        
+        /// <summary>
+        /// ERROR_TEXT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ERROR_TEXT;
+        
+        /// <summary>
         /// LOGIN_EMAIL_TEXT control.
         /// </summary>
         /// <remarks>
@@ -83,23 +101,5 @@ namespace CARS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button LOGIN_REGISTER_BUTTON;
-        
-        /// <summary>
-        /// ERROR_PANEL control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel ERROR_PANEL;
-        
-        /// <summary>
-        /// ERROR_TEXT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ERROR_TEXT;
     }
 }

@@ -24,7 +24,7 @@ WHERE `RIDES_ID` = '".$_GET['id']."';";
             
                 $text = "Der Nutzer {$row_["fahrerName"]} hat seine Fahrt mit der Abfahrtszeit {$row_["time"]} abgesagt.";
             
-                $sql = "INSERT INTO `MESSAGES` (`ID`, `MESSAGE`, `CHAT_ID`, `SENDER`) VALUES (NULL, '".$text."', '".$chat."', '".0."');";
+                $sql = "INSERT INTO `MESSAGES` (`ID`, `MESSAGE`, `CHAT_ID`, `SENDER`) VALUES (NULL, '".$text."', '".$chat."', '"."0"."');";
 
                 $conn->query($sql);
             }

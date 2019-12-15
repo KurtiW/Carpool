@@ -37,7 +37,7 @@ else
         if($chat != -1)
         {
             
-                $text = "Herzlich willkommen, vielen Dank für die Anmeldung. Allzeit gute Fahrt wünscht Ihnen Ihr IGShuttle Team";
+                $text = "Herzlich willkommen, vielen Dank für die Anmeldung. Allzeit gute Fahrt wünscht Ihnen Ihr IGShuttle Team! Probieren Sie gerne auch unser App für Android und IOS aus!";
             
                 $sql = "INSERT INTO `MESSAGES` (`ID`, `MESSAGE`, `CHAT_ID`, `SENDER`) VALUES (NULL, '".$text."', '".$chat."', '" . 0 . "');";
 
